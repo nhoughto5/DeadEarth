@@ -46,7 +46,7 @@ Edit the script to contain a list of tranform objects:
 ##### Waypoint Paths
 In order to get unity to render our waypoint paths we must create an editor script which modifies the way the unity editor renders components. An editor script is a C# script that MUST be within a folder named 'Editor'. It does not matter where this folder is in the heirarchy, infact you can have multiple. Unity treats each as one single folder. 
 
-An editor script class extends the [Editor](https://docs.unity3d.com/ScriptReference/Editor.html) class. The details of the complete script can be seen [here](https://github.com/nhoughto5/DeadEarth/tree/master/Assets/Dead%20Earth/Editor).
+An editor script class extends the [Editor](https://docs.unity3d.com/ScriptReference/Editor.html) class. The details of the complete script can be seen [here](https://github.com/nhoughto5/DeadEarth/blob/master/Assets/Dead%20Earth/Editor/AIWaypointNetworkEditor.cs).
 
 ##### Notes and Definitions 
 - [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
