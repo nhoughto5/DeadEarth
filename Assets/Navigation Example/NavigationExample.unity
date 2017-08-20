@@ -143,6 +143,7 @@ MonoBehaviour:
   - {fileID: 488134832}
   - {fileID: 1667152567}
   - {fileID: 1359729955}
+  DisplayMode: 1
 --- !u!4 &77118329
 Transform:
   m_ObjectHideFlags: 0
@@ -246,6 +247,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 384143387}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &926648537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 926648539}
+  - component: {fileID: 926648538}
+  m_Layer: 0
+  m_Name: Waypoint Network 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &926648538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926648537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00e9aa6dc243df946baa5bb309061072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Waypoints:
+  - {fileID: 1545210745}
+  - {fileID: 488134832}
+  - {fileID: 1404532509}
+  - {fileID: 1160441047}
+  - {fileID: 447220221}
+  - {fileID: 1667152567}
+  - {fileID: 1359729955}
+  DisplayMode: 1
+--- !u!4 &926648539
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926648537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1014274779
 Prefab:
