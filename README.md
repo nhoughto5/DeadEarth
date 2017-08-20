@@ -1,7 +1,7 @@
 # **Dead Earth**
 ##### A Udemy Course Diary
 
-This repository contains the code base develped while following the lessons which can be found [here](https://www.udemy.com/build-your-own-first-person-shooter-survival-game-in-unity). This course provided an excellent look into technologies and strategies used to build modern video games. Dead Earth is a first person shooter built with [Unity 5](https://unity3d.com/) and C#.
+This repository contains the code base develped while followiung the which can be found [here](https://www.udemy.com/build-your-own-first-person-shooter-survival-game-in-unity). This course provided an excellent look into technologies and strategies used to build modern video games. Dead Earth is a first person shooter built with [Unity 5](https://unity3d.com/) and C#.
 
 ## Course Discussion
 The following does not follow the lesson plan stages directly but somewhat aligns with the progression of the course material.
@@ -42,6 +42,11 @@ Edit the script to contain a list of tranform objects:
     public class AIWaypointNetwork : MonoBehaviour {
         public List<Transform> Waypoints = new List<Transform>();
     }
+
+##### Waypoint Paths
+In order to get unity to render our waypoint paths we must create an editor script which modifies the way the unity editor renders components. An editor script is a C# script that MUST be within a folder named 'Editor'. It does not matter where this folder is in the heirarchy, infact you can have multiple. Unity treats each as one single folder. 
+
+An editor script class extends the [Editor](https://docs.unity3d.com/ScriptReference/Editor.html) class. The details of the complete script can be seen [here](https://github.com/nhoughto5/DeadEarth/tree/master/Assets/Dead%20Earth/Editor).
 
 ##### Notes and Definitions 
 - [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
