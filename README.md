@@ -29,7 +29,19 @@ To set up way points go to the 'GameObject' menu and select 'Create Empty'. This
 
 To create the first waypoint, add a child game object by selecting 'Create Empty Child' from the 'Game Object' menu when the 'Waypoints' object is selected. Rename to 'Waypoint 1'. 
 
-To add a graphic for the system to render for the way point, find a simple flag png and add to project. With the child object selected, in the inspector pane click the cube icon in the top left corner of the menu. Hit 'Other' in the menu that appears and find your png.
+To add a graphic for the system to render for the way point, find a simple flag png and add to project. With the child object selected, in the inspector pane click the cube icon in the top left corner of the menu. Hit 'Other' in the menu that appears and find your png. To create more, right click and use 'Duplicate'.
+
+To create a waypoint network, create a new game object using 'Create Empty'. Create a C# script called 'AIWaypointsNetwork.cs' and add it to the network object.
+
+Edit the script to contain a list of tranform objects:
+
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+    
+    public class AIWaypointNetwork : MonoBehaviour {
+        public List<Transform> Waypoints = new List<Transform>();
+    }
 
 ##### Notes and Definitions 
 - [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
