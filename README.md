@@ -1,11 +1,9 @@
 # **Dead Earth**
 ##### A Udemy Course Diary
-----------
 
 This repository contains the code base develped while followiung the which can be found [here](https://www.udemy.com/build-your-own-first-person-shooter-survival-game-in-unity). This course provided an excellent look into technologies and strategies used to build modern video games. Dead Earth is a first person shooter built with [Unity 5](https://unity3d.com/) and C#.
 
 ## Course Discussion
-----------
 The following does not follow the lesson plan stages directly but somewhat aligns with the progression of the course material.
 
 #### Introduction
