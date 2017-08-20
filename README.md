@@ -24,3 +24,13 @@ The idea of a [navigation mesh](https://en.wikipedia.org/wiki/Navigation_mesh) i
 - **Voxelization:** Similar to the notion of filling pixels on the screen however 3D. Finds 3D cubes which are traversable by an agent via interpolatino from the meshes of the map. 
 - **Height Mesh:** Includes more accurate data about the height of the map. Used to prevent agent floating.
 
+##### Waypoints
+To set up way points go to the 'GameObject' menu and select 'Create Empty'. This creates an empty game object, rename it to 'Waypoints'. It is adviseable to immediately position this object at 0,0,0. This can be done in the inspector.
+
+To create the first waypoint, add a child game object by selecting 'Create Empty Child' from the 'Game Object' menu when the 'Waypoints' object is selected. Rename to 'Waypoint 1'. 
+
+To add a graphic for the system to render for the way point, find a simple flag png and add to project. With the child object selected, in the inspector pane click the cube icon in the top left corner of the menu. Hit 'Other' in the menu that appears and find your png.
+
+##### Notes and Definitions 
+- [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
+- [Off-Mesh Links](https://docs.unity3d.com/Manual/class-OffMeshLink.html): Generated shortcuts which allow the traversal over broken voxels.
