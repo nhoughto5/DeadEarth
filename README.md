@@ -1,5 +1,3 @@
-#**Dead Earth**
-####A Udemy Course Diary
-
-
+# **Dead Earth**
+#### A Udemy Course Diary
 ----------
