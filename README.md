@@ -48,8 +48,9 @@ In order to get unity to render our waypoint paths we must create an editor scri
 
 An editor script class extends the [Editor](https://docs.unity3d.com/ScriptReference/Editor.html) class. The details of the complete script can be seen [here](https://github.com/nhoughto5/DeadEarth/blob/master/Assets/Dead%20Earth/Editor/AIWaypointNetworkEditor.cs).
 
-A cylinder is then added to the scene to represent a basic user agent. This is done via the 'GameObject' -> '3D Object' menu. A nav-mesh component is then added to create some movement parameters.
+A cylinder is then added to the scene to represent a basic user agent. This is done via the 'GameObject' -> '3D Object' menu. A nav-mesh component is then added to create movement parameters.
 
+A new class, NavAgentExample.cs is then made. This class controls selection and of new way points and initiates movement. This class relies on the '[hasPath](https://docs.unity3d.com/412/Documentation/ScriptReference/NavMeshAgent-hasPath.html)' method. This method is a-synchronous. In other words, when a destination is set it takes some time for the path to be computed. The hasPath method returns true when complete. This method can be used in conjunction with the 'pathPending' method to build robust logic.
 ##### Notes and Definitions 
 - [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
 - [Off-Mesh Links](https://docs.unity3d.com/Manual/class-OffMeshLink.html): Generated shortcuts which allow the traversal over broken voxels.
