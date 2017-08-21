@@ -58,8 +58,17 @@ Off-mesh links can be generated in the nav-mesh by setting a jump distance great
 
     _navAgent.remainingDistance <= _navAgent.stoppingDistance
 
+**To create a manual off-mesh link:**
+1. Create two empty game objects (not children), give names (ex: entrance, exit).
+2. Place over the gap you wish the link.
+3. On one of the game objects add the 'Off-mesh link' component.
+4. Drag that objects transform component (also in the inspector) into the start/end parameter of the 'Off-mesh link' component.
+5. Drag the other game object into the remaining start/end parameter.
 
-- [AI.NavMeshAgent](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html)
+**To Customize the traversal of off-mesh links:**
+
+
 ##### Notes and Definitions 
 - [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
 - [Off-Mesh Links](https://docs.unity3d.com/Manual/class-OffMeshLink.html): Generated shortcuts which allow the traversal over broken voxels.
+- [AI.NavMeshAgent](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html) Documentation
