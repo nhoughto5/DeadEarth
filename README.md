@@ -54,7 +54,7 @@ A new class, NavAgentExample.cs is then made. This class controls selection and 
 
 Partial paths occur when a waypoint is not reachable. The agent will get as close as possible then declare that it has completed that path, and then move on.
 
-Off-mesh links can be generated in the nav-mesh by setting a jump distance greater than 0. Any gaps less than this will become traversable. **There is a bug in Unity** where the 'hasPath' Boolean is set to false immediately after traversing an off-mesh link. This can break correct logic. It can be circumvented by using the [remainingDistance](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent-remainingDistance.html) method in conjunction with the stopping distance of the agent:
+Off-mesh links can be generated in the nav-mesh by setting a jump distance greater than 0. Any gaps less than this will become traversable. [There is a bug in Unity](https://issuetracker.unity3d.com/issues/navmeshagent-dot-haspath-is-false-when-agent-is-crossing-an-offmeshlink) where the 'hasPath' Boolean is set to false immediately after traversing an off-mesh link. This can break correct logic. It can be circumvented by using the [remainingDistance](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent-remainingDistance.html) method in conjunction with the stopping distance of the agent:
 
     _navAgent.remainingDistance <= _navAgent.stoppingDistance
 
