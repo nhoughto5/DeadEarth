@@ -28,7 +28,7 @@ public class NavAgentExample : MonoBehaviour
         pathPending = _navAgent.pathPending;
         PathStatus = _navAgent.pathStatus;
 
-        if ((!hasPath && !pathPending) || PathStatus == NavMeshPathStatus.PathInvalid)
+        if ((_navAgent.remainingDistance <= _navAgent.stoppingDistance && !pathPending) || PathStatus == NavMeshPathStatus.PathInvalid)
         {
             SetNextDestination(true);
         }
