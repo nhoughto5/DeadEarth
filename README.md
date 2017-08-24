@@ -83,8 +83,14 @@ Similar to a collider object but used for the navigation system. Even though obj
 
 Though a NavMesh Obstacle will stop a nav-agent from passing through an object it will not cause the agent to recompute it's path. This is because the object is not part of the nav mesh. With Unity 5+ the nav mesh obstacle has an option called 'carve'. This option causes the object to carve out a silhouette of itself from the nav mesh.
 
+#### Asset Preparation
+
+
+
 
 ##### Notes and Definitions 
 - [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
 - [Off-Mesh Links](https://docs.unity3d.com/Manual/class-OffMeshLink.html): Generated shortcuts which allow the traversal over broken voxels.
 - [AI.NavMeshAgent](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html) Documentation
+- In Place Animation: Animations which are independent of position. Can often result in a phenomenon known as 'skating' where a character seems to float or skate. Resolved by using animations with 'root motion'.
+- [Mixamo](https://www.mixamo.com/#/): Greate resource for models, animations.... etc
