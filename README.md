@@ -66,6 +66,22 @@ Off-mesh links can be generated in the nav-mesh by setting a jump distance great
 5. Drag the other game object into the remaining start/end parameter.
 
 **To Customize the traversal of off-mesh links:**
+1. In the agent, turn off 'Auto-traverse off mesh links'.
+2. In the agent's update detect [isOnOffMeshLink](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent-isOnOffMeshLink.html).
+3. Call a [CoRoutine](https://docs.unity3d.com/Manual/Coroutines.html). (A CoRoutine is a method which can run over multiple update calls).
+4. Create an 'AnimationCurve' objct as a member of the update script.
+5. Add an evaluation of the AnimationCurve to a lerp of the start->end of the traversal (see example below).
+6. In the Unity Editor, on the nav agent's update script modify the 'AnimationCurve' object to a desired cuve (ex. parabola)
+
+Ex:
+
+    _navAgent.transform.position = Vector3.Lerp(startPos, endPos, t) + JumpCurve.Evaluate(t) * Vector3.up;
+
+
+**NavMesh Obstacles**
+Similar to a collider object but used for the navigation system. Even though objects may have a collider on them, an agent on a navigation path will traverse through them without a NavMesh Obstacle (the collider is linked to the physics system, not the navigation system). 
+
+Though a NavMesh Obstacle will stop a nav-agent from passing through an object it will not cause the agent to recompute it's path. This is because the object is not part of the nav mesh. With Unity 5+ the nav mesh obstacle has an option called 'carve'. This option causes the object to carve out a silhouette of itself from the nav mesh.
 
 
 ##### Notes and Definitions 
