@@ -103,8 +103,14 @@ Avatar creation requires the skeleton to be in a T-Pose. If not, the animation c
 1. On the 'Rig' tab, change 'Avatar Definition' to 'Create from Other Avatar'. Find the avatar of the model for which the animation was created.
 2. On the 'Rig' tab, hit 'Configure'. Manually adjust the skeleton into a T-Pose.
 
+#### Animation State Machines
+To create an animation state machine (ASM) an animator controller must be created and assigned to a model's animator component.
 
+Animations can be included in the ASM by dragging them into the animator controller window. By double clicking, the inspector for that animation can be retreived. Selecting the 'Loop Time' animation will loop the animation when played. This is adviseable when controlling via parameters. Transitions can be made by rightclicking the source node and connecting to a destination node. Deselcting 'Has Exit Time' allows for a transition to take place at any time. It does not have to wait for the animation to complete.
 
+Layers can be used to blend animations together (i.e. punching while walking). All layers except 'Base' are assigned a weight of 0. This can be changed by clicking on the layer 'cog'. Setting the weight to 1 will dominate while less than will blend. Often it is desireable to have a layer wait for a condition before executing. This can be acheived with an empty state after the entry state.
+
+To have a layer only affect part of the model avatar masks are needed. Usng the 'Humanoid' drop down the parts of the avatar we do not wish to be affected can be turned off. 
 ##### Notes and Definitions 
 - [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
 - [Off-Mesh Links](https://docs.unity3d.com/Manual/class-OffMeshLink.html): Generated shortcuts which allow the traversal over broken voxels.
