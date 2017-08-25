@@ -111,6 +111,30 @@ Animations can be included in the ASM by dragging them into the animator control
 Layers can be used to blend animations together (i.e. punching while walking). All layers except 'Base' are assigned a weight of 0. This can be changed by clicking on the layer 'cog'. Setting the weight to 1 will dominate while less than will blend. Often it is desireable to have a layer wait for a condition before executing. This can be acheived with an empty state after the entry state.
 
 To have a layer only affect part of the model avatar masks are needed. Usng the 'Humanoid' drop down the parts of the avatar we do not wish to be affected can be turned off. 
+
+**Blend Tree**
+Allows for a more intelligent means of blending animations (i.e. run, walk, sprint. Based on speed). Blend tree's can have multiple dimensions. For example, speed is a dimension but health can be another. By turning off 'Automate Thresholds' and using 'Compute Thresholds' the animator will look at the root motion of the animations and compute the values of the animations accordingly. Instead of the blend being from 0 to 1 the values will interpolate between the walk speed (1.56) to the run speed (5.66). Now we can plug in the nav agent desired speed directly.
+
+ **Add a trailing camera (3rd person)**
+ Find the head of the desired model and create an empty child of it. Call it 'Head Cam Mount'. Use 'GameObject' menu shortcut 'Align with view' to move cam mount to desired position. Add a script 'SmoothCameraMount'. Add script to main camera and make the head cam mount the mount object.Change the Update function to LateUpdate and add:
+
+    public class SmoothCameraMount : MonoBehaviour {
+    
+        public Transform Mount = null;
+        public float Speed = 5.0f;
+    
+    	// Use this for initialization
+    	void Start () {
+    		
+    	}
+    
+        private void LateUpdate()
+        {
+            transform.position = Vector3.Lerp(transform.position, Mount.position, Time.deltaTime * Speed);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Mount.rotation, Time.deltaTime * Speed);
+        }
+    }
+
 ##### Notes and Definitions 
 - [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
 - [Off-Mesh Links](https://docs.unity3d.com/Manual/class-OffMeshLink.html): Generated shortcuts which allow the traversal over broken voxels.
