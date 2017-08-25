@@ -25,7 +25,7 @@ The idea of a [navigation mesh](https://en.wikipedia.org/wiki/Navigation_mesh) i
 - **Height Mesh:** Includes more accurate data about the height of the map. Used to prevent agent floating.
 
 ##### Waypoints
-To set up way points go to the 'GameObject' menu and select 'Create Empty'. This creates an empty game object, rename it to 'Waypoints'. It is adviseable to immediately position this object at 0,0,0. This can be done in the inspector.
+To set up way points go to the 'GameObject' menu and select 'Create Empty'. This creates an empty game object, rename it to 'Waypoints'. It is advisable to immediately position this object at 0,0,0. This can be done in the inspector.
 
 To create the first waypoint, add a child game object by selecting 'Create Empty Child' from the 'Game Object' menu when the 'Waypoints' object is selected. Rename to 'Waypoint 1'. 
 
@@ -83,8 +83,25 @@ Similar to a collider object but used for the navigation system. Even though obj
 
 Though a NavMesh Obstacle will stop a nav-agent from passing through an object it will not cause the agent to recompute it's path. This is because the object is not part of the nav mesh. With Unity 5+ the nav mesh obstacle has an option called 'carve'. This option causes the object to carve out a silhouette of itself from the nav mesh.
 
-#### Asset Preparation
 
+#### Mechanim
+
+Mechanim provides a crucial means of mapping (humanoid) animations to models irregardless of the naming convention of the hierarchy. This allows any animation to be mapped to any model. Both an animation and a model are given an 'Avatar' by Unity. The animation and character hierarchies are then mapped to their respective avatars. Since unity avatars are constant unity can pair them to connect any animation with any model. This feature is called 'Humanoid Re-targeting'.
+
+**To make a character model/animation available to mechanim**
+1. Select the .fbx file of the character model.
+2. Choose the 'Rig' tab in the inspector.
+3. Change 'Animation Type' to 'Humanoid'.
+4. Change 'Avatar Definition' to 'Create From This Model'.
+5. Hit Apply.
+6. Should be a small check mark near the 'Configure' button. Signifies that Unity was able to find all of the bones in the heirarchy it expected.
+7. Hit 'Configure' if it fails.
+
+**If animation is not working correctly**
+Avatar creation requires the skeleton to be in a T-Pose. If not, the animation could look strange. There are two fixes:
+
+1. On the 'Rig' tab, change 'Avatar Definition' to 'Create from Other Avatar'. Find the avatar of the model for which the animation was created.
+2. On the 'Rig' tab, hit 'Configure'. Manually adjust the skeleton into a T-Pose.
 
 
 
