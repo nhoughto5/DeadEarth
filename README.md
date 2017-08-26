@@ -115,8 +115,9 @@ To have a layer only affect part of the model avatar masks are needed. Usng the 
 **Blend Tree**
 Allows for a more intelligent means of blending animations (i.e. run, walk, sprint. Based on speed). Blend tree's can have multiple dimensions. For example, speed is a dimension but health can be another. By turning off 'Automate Thresholds' and using 'Compute Thresholds' the animator will look at the root motion of the animations and compute the values of the animations accordingly. Instead of the blend being from 0 to 1 the values will interpolate between the walk speed (1.56) to the run speed (5.66). Now we can plug in the nav agent desired speed directly.
 
-
-##### Notes and Definitions 
+----------
+## Notes
+#### Definitions
 - [Voxel](http://whatis.techtarget.com/definition/voxel): A voxel is a unit of graphic information that defines a point in three-dimensional space. A cube of space or a polygon on a 2D mesh.  
 - [Off-Mesh Links](https://docs.unity3d.com/Manual/class-OffMeshLink.html): Generated shortcuts which allow the traversal over broken voxels.
 - [AI.NavMeshAgent](https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent.html) Documentation
@@ -124,8 +125,7 @@ Allows for a more intelligent means of blending animations (i.e. run, walk, spri
 - [Mixamo](https://www.mixamo.com/#/): Greate resource for models, animations.... etc
 - **Hashes**: The unity system uses hash values to identify objects and parameters. When retreiving entities with a string it is better to precompute the hash value then search for that hash. 
 
-
- **Add a trailing camera (3rd person)**
+#### Add a trailing camera (3rd person)
  Find the head of the desired model and create an empty child of it. Call it 'Head Cam Mount'. Use 'GameObject' menu shortcut 'Align with view' to move cam mount to desired position. Add a script 'SmoothCameraMount'. Add script to main camera and make the head cam mount the mount object.Change the Update function to LateUpdate and add:
 
     public class SmoothCameraMount : MonoBehaviour {
@@ -144,3 +144,8 @@ Allows for a more intelligent means of blending animations (i.e. run, walk, spri
             transform.rotation = Quaternion.Slerp(transform.rotation, Mount.rotation, Time.deltaTime * Speed);
         }
     }
+#### Download the 
+ 1. Create a temporary project called 'AnimFilter'.
+ 2. Go to asset store.
+ 3. Look for 'huge BX mocap library', download all three parts.
+    
