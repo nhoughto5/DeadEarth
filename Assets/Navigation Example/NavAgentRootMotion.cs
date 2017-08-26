@@ -13,6 +13,8 @@ public class NavAgentRootMotion : MonoBehaviour
     public bool hasPath = false, pathPending = false;
     public NavMeshPathStatus PathStatus = NavMeshPathStatus.PathInvalid;
     public AnimationCurve JumpCurve = new AnimationCurve();
+    public bool mixedMode = true;
+
 
     private Animator _animator = null;
     private float smoothAngle = 0.0f;
@@ -41,6 +43,17 @@ public class NavAgentRootMotion : MonoBehaviour
         float speed = localDesiredVelocity.z;
         _animator.SetFloat("Speed", speed, 0.1f, Time.deltaTime);
 
+
+        if (_navAgent.desiredVelocity.sqrMagnitude > Mathf.Epsilon)
+        {
+            if(!mixedMode || (mixedMode && Mathf.Abs(angle) < 80.0f && _animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.Locomotion")))
+            {
+                Quaternion lookRotation = Quaternion.LookRotation(_navAgent.desiredVelocity, Vector3.up);
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, 5.0f * Time.deltaTime);
+            }
+        }
+
+
         if ((_navAgent.remainingDistance <= _navAgent.stoppingDistance && !pathPending) || PathStatus == NavMeshPathStatus.PathInvalid)
         {
             SetNextDestination(true);
@@ -54,7 +67,11 @@ public class NavAgentRootMotion : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        transform.rotation = _animator.rootRotation;
+        //transform.rotation = _animator.rootRotation;
+        if (mixedMode && !_animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.Locomotion"))
+        {
+            transform.rotation = _animator.rootRotation;
+        }
         _navAgent.velocity = (Time.deltaTime != 0)? _animator.deltaPosition / Time.deltaTime : Vector3.zero;
     }
 
