@@ -119,6 +119,7 @@ Allows for a more intelligent means of blending animations (i.e. run, walk, spri
 On an actor in the scene, add a capsule collider and position it to roughly fit around the model. Then add Rigidbody component with the 'Is Kinematic' option selected. This disables the physics on this entity. Go to the inspector and in the top right open the 'Layer' drop down. Add a layer called 'AI Entity'. Select the actor and change it's layer to the new 'AI Entity' layer (hit 'no' on the pop-up regarding it's children). Create another trigger called 'AI Entity Trigger'. Go to Edit > Project Settings > Physics. In the layer interaction matrix, deselect every row in the 'AI Entity' column and every row in the 'AI Entity Trigger' column except 'AI Entity'. Now the two new layers exclusivly interact with one another. 
 
 Create an empty game object called 'Omni Zombie' and set it to the 'AI Entity' layer. Make the actor a child of this object. Make another empty game object a child of 'Omni Zombie'. Call this second child 'Target Trigger' and set it to the 'AI Entity Trigger'. Add a spherical collider component to this trigger object. This trigger, in game, will be moved to the zombie's destination. The sphere will act as a trigger, notifying the zombie it has arrived at it's target.
+
 ----------
 ## Notes
 #### Definitions
