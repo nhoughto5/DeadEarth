@@ -27,7 +27,7 @@ public class AIZombieStateMachine : AIStateMachine
     private int _seekingHash = Animator.StringToHash("Seeking");
     private int _feedingHash = Animator.StringToHash("Feeding");
     private int _attackHash = Animator.StringToHash("Attack");
-
+    private float _speed = 0.0f;
 
     // Public Properties
     public float fov { get { return _fov; } }
@@ -43,8 +43,8 @@ public class AIZombieStateMachine : AIStateMachine
     public int seeking { get { return _seeking; } set { _seeking = value; } }
     public float speed
     {
-        get { return _navAgent != null ? _navAgent.speed : 0.0f; }
-        set { if (_navAgent != null) _navAgent.speed = value; }
+        get { return _speed; }
+        set { _speed = value; }
     }
 
     // ---------------------------------------------------------
@@ -58,7 +58,7 @@ public class AIZombieStateMachine : AIStateMachine
 
         if (_animator != null)
         {
-            _animator.SetFloat(_speedHash, _navAgent.speed);
+            _animator.SetFloat(_speedHash, _speed);
             _animator.SetBool(_feedingHash, _feeding);
             _animator.SetInteger(_seekingHash, _seeking);
             _animator.SetInteger(_attackHash, _attackType);

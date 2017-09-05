@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AIZombieState : AIState
+public abstract class AIZombieState : AIState
 {
 
     protected int _playerLayerMask = -1;
@@ -19,7 +19,7 @@ public class AIZombieState : AIState
 
     public override void SetStateMachine(AIStateMachine stateMachine)
     {
-        if (_stateMachine.GetType() == typeof(AIZombieStateMachine))
+        if (stateMachine.GetType() == typeof(AIZombieStateMachine))
         {
             base.SetStateMachine(stateMachine);
             _zombieStateMachine = (AIZombieStateMachine)stateMachine;
@@ -145,15 +145,5 @@ public class AIZombieState : AIState
             return true;
         }
         return false;
-    }
-
-    public override AIStateType OnUpdate()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public override AIStateType GetStateType()
-    {
-        throw new System.NotImplementedException();
     }
 }

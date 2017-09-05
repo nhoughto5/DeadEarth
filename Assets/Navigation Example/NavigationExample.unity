@@ -6190,7 +6190,7 @@ Transform:
   m_PrefabParentObject: {fileID: 494236, guid: 22e8e9479d52a604abc938e32f8c8873, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 408121299}
-  m_LocalRotation: {x: -0.6648626, y: 0.32071453, z: 0.1664963, w: 0.6537424}
+  m_LocalRotation: {x: -0.6648625, y: 0.3207145, z: 0.16649629, w: 0.6537423}
   m_LocalPosition: {x: 1.4393446, y: 1.035033, z: 12.526718}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
@@ -10012,6 +10012,8 @@ GameObject:
   - component: {fileID: 627763281}
   - component: {fileID: 627763283}
   - component: {fileID: 627763279}
+  - component: {fileID: 627763280}
+  - component: {fileID: 627763284}
   m_Layer: 8
   m_Name: AI Entity
   m_TagString: Untagged
@@ -10069,6 +10071,25 @@ MonoBehaviour:
   _targetTrigger: {fileID: 1839899511}
   _sensorTrigger: {fileID: 344606129}
   _stoppingDistance: 1
+  _fov: 50
+  _sight: 0.5
+  _hearing: 1
+  _aggression: 0.5
+  _health: 100
+  _intelligence: 0.5
+  _satisfaction: 1
+--- !u!114 &627763280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627763276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde1eb1a78366d94c8ea63d1d1da6260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idleTimeRange: {x: 5, y: 10}
 --- !u!195 &627763281
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10078,7 +10099,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 100
@@ -10118,6 +10139,21 @@ CapsuleCollider:
   m_Height: 1.84
   m_Direction: 1
   m_Center: {x: 0, y: 0.87, z: 0}
+--- !u!114 &627763284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627763276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b558c41d0a32644bd97d537a42a0e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waypointNetwork: {fileID: 77118328}
+  _randomPatrol: 0
+  _currentWaypoint: 0
+  _speed: 1
 --- !u!1 &629500671
 GameObject:
   m_ObjectHideFlags: 0
