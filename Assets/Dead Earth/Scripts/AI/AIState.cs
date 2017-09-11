@@ -45,4 +45,17 @@ public abstract class AIState : MonoBehaviour
         radius = Mathf.Max(col.radius * col.transform.lossyScale.x, col.radius * col.transform.lossyScale.y);
         radius = Mathf.Max(radius, col.radius * col.transform.lossyScale.z);
     }
+
+
+    public static float FindSignAngle(Vector3 from, Vector3 to)
+    {
+        if (from == to) return 0.0f;
+
+        float angle = Vector3.Angle(from, to);
+        Vector3 cross = Vector3.Cross(from, to);
+
+        angle *= Mathf.Sign(cross.y);
+
+        return angle;
+    }
 }

@@ -36,19 +36,19 @@ public abstract class AIZombieState : AIState
             if (other.CompareTag("Player"))
             {
                 float distance = Vector3.Distance(_zombieStateMachine.sensorPosition, other.transform.position);
-                if (curType != AITargetType.VisualPlayer ||
-                    (curType == AITargetType.VisualPlayer && distance < _zombieStateMachine.VisualThreat.distance))
+                if (curType != AITargetType.Visual_Player ||
+                    (curType == AITargetType.Visual_Player && distance < _zombieStateMachine.VisualThreat.distance))
                 {
                     RaycastHit hitInfo;
                     if (ColliderIsVisible(other, out hitInfo, _playerLayerMask))
                     {
                         // Yep...it's close and in our FOV and we have line of sight so store as the current most dangerous threat
-                        _zombieStateMachine.VisualThreat.Set(AITargetType.VisualPlayer, other, other.transform.position,
+                        _zombieStateMachine.VisualThreat.Set(AITargetType.Visual_Player, other, other.transform.position,
                             distance);
                     }
                 }
             }
-            else if (other.CompareTag("Flashlight") && curType != AITargetType.VisualPlayer)
+            else if (other.CompareTag("Flashlight") && curType != AITargetType.Visual_Player)
             {
                 BoxCollider flashLightTrigger = (BoxCollider)other;
                 float distanceToThreat = Vector3.Distance(_zombieStateMachine.sensorPosition,
@@ -57,7 +57,7 @@ public abstract class AIZombieState : AIState
                 float aggrFactor = distanceToThreat / zSize;
                 if (aggrFactor < _zombieStateMachine.sight && aggrFactor <= _zombieStateMachine.intelligence)
                 {
-                    _zombieStateMachine.VisualThreat.Set(AITargetType.VisualLight, other, other.transform.position, distanceToThreat);
+                    _zombieStateMachine.VisualThreat.Set(AITargetType.Visual_Light, other, other.transform.position, distanceToThreat);
                 }
             }
             else if (other.CompareTag("AI Sound Emitter"))
@@ -80,7 +80,7 @@ public abstract class AIZombieState : AIState
                     _zombieStateMachine.AudioThreat.Set(AITargetType.Audio, other, soundPos, distanceToThreat);
                 }
             }
-            else if (other.CompareTag("AI Food") && curType != AITargetType.VisualPlayer && curType != AITargetType.VisualLight 
+            else if (other.CompareTag("AI Food") && curType != AITargetType.Visual_Player && curType != AITargetType.Visual_Light 
                 && _zombieStateMachine.satisfaction <= 0.9f && _zombieStateMachine.AudioThreat.type == AITargetType.None)
             {
                 float distanceToThreat = Vector3.Distance(other.transform.position, _zombieStateMachine.sensorPosition);
@@ -89,7 +89,7 @@ public abstract class AIZombieState : AIState
                     RaycastHit hitInfo;
                     if (ColliderIsVisible(other, out hitInfo, _visualLayerMask))
                     {
-                        _zombieStateMachine.VisualThreat.Set(AITargetType.VisualFood, other, other.transform.position, distanceToThreat);
+                        _zombieStateMachine.VisualThreat.Set(AITargetType.Visual_Food, other, other.transform.position, distanceToThreat);
                     }
                 }
             }

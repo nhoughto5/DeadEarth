@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public enum AIStateType { None, Idle, Alerted, Patrol, Attack, Feeding, Pursuit, Dead };
-public enum AITargetType { None, Waypoint, VisualPlayer, VisualLight, VisualFood, Audio };
+public enum AITargetType { None, Waypoint, Visual_Player, Visual_Light, Visual_Food, Audio };
 public enum AITriggerEventType { Enter, Stay, Exit };
 
 public struct AITarget
@@ -70,6 +70,12 @@ public abstract class AIStateMachine : MonoBehaviour
 
     public Animator animator { get { return _animator; } }
     public NavMeshAgent navAgent { get { return _navAgent; } }
+
+    public bool useRootPosition { get { return _rootPositionRefCount > 0; } }
+    public bool useRootRotation { get { return _rootRotationRefCount > 0; } }
+    public AITargetType targetType { get { return _target.type; } }
+    public Vector3 targetPosition { get { return _target.position; } }
+
     public Vector3 sensorPosition
     {
         get
@@ -92,9 +98,6 @@ public abstract class AIStateMachine : MonoBehaviour
             return Mathf.Max(radius, _sensorTrigger.radius * _sensorTrigger.transform.lossyScale.z);
         }
     }
-
-    public bool useRootPosition { get { return _rootPositionRefCount > 0; } }
-    public bool useRootRotation { get { return _rootRotationRefCount > 0; } }
 
     protected virtual void Awake()
     {

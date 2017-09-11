@@ -10014,6 +10014,7 @@ GameObject:
   - component: {fileID: 627763279}
   - component: {fileID: 627763280}
   - component: {fileID: 627763284}
+  - component: {fileID: 627763285}
   m_Layer: 8
   m_Name: AI Entity
   m_TagString: Untagged
@@ -10089,7 +10090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde1eb1a78366d94c8ea63d1d1da6260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _idleTimeRange: {x: 5, y: 10}
+  _idleTimeRange: {x: 1, y: 3}
 --- !u!195 &627763281
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10099,7 +10100,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 100
@@ -10152,8 +10153,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waypointNetwork: {fileID: 77118328}
   _randomPatrol: 0
-  _currentWaypoint: 0
-  _speed: 1
+  _currentWaypoint: 5
+  _speed: 2
+  _turnOnSpotThreshold: 80
+  _slerpSpeed: 5
+--- !u!114 &627763285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627763276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aedbcf1bc265f914fab95614d3d6d019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxDuration: 10
 --- !u!1 &629500671
 GameObject:
   m_ObjectHideFlags: 0
