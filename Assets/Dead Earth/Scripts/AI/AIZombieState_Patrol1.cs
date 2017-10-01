@@ -1,134 +1,143 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
-public class AIZombieState_Patrol1 : AIZombieState
-{
-    [SerializeField] private AIWaypointNetwork _waypointNetwork = null;
-    [SerializeField] private bool _randomPatrol = false;
-    [SerializeField] private int _currentWaypoint = 0;
-    [SerializeField] [Range(0.0f, 3.0f)] private float _speed = 2.0f;
+// ----------------------------------------------------------------
+// CLASS	:	AIZombieState_Patrol1
+// DESC		:	Generic Patrolling Behaviour for a Zombie
+// ----------------------------------------------------------------
+public class AIZombieState_Patrol1 : AIZombieState {
+
+    // Inpsector Assigned
     [SerializeField] private float _turnOnSpotThreshold = 80.0f;
+
     [SerializeField] private float _slerpSpeed = 5.0f;
 
+    [SerializeField] [Range(0.0f, 3.0f)] private float _speed = 1.0f;
 
-    public override AIStateType GetStateType()
-    {
+    // ------------------------------------------------------------
+    // Name	:	GetStateType
+    // Desc	:	Called by parent State Machine to get this state's
+    //			type.
+    // ------------------------------------------------------------
+    public override AIStateType GetStateType() {
         return AIStateType.Patrol;
     }
 
-    public override void OnEnterState()
-    {
+    // ------------------------------------------------------------------
+    // Name	:	OnEnterState
+    // Desc	:	Called by the State Machine when first transitioned into
+    //			this state. It initializes the state machine
+    // ------------------------------------------------------------------
+    public override void OnEnterState() {
         Debug.Log("Entering Patrol State");
         base.OnEnterState();
-        if (_zombieStateMachine == null) return;
+        if (_zombieStateMachine == null)
+            return;
 
+        // Configure State Machine
         _zombieStateMachine.NavAgentControl(true, false);
         _zombieStateMachine.speed = _speed;
         _zombieStateMachine.seeking = 0;
         _zombieStateMachine.feeding = false;
         _zombieStateMachine.attackType = 0;
 
-        if (_zombieStateMachine.targetType != AITargetType.Waypoint)
-        {
-            _zombieStateMachine.ClearTarget();
+        // Set Destination
+        _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.GetWaypointPosition(false));
 
-            if (_waypointNetwork != null && _waypointNetwork.Waypoints.Count > 0)
-            {
-                NextWaypoint();
-            }
-        }
-        _zombieStateMachine.navAgent.isStopped = false;
+        // Make sure NavAgent is switched on
+        _zombieStateMachine.navAgent.Resume();
     }
 
-    public override AIStateType OnUpdate()
-    {
-        if (_zombieStateMachine.VisualThreat.type == AITargetType.Visual_Player)
-        {
+    // ------------------------------------------------------------
+    // Name	:	OnUpdate
+    // Desc	:	Called by the state machine each frame to give this
+    //			state a time-slice to update itself. It processes
+    //			threats and handles transitions as well as keeping
+    //			the zombie aligned with its proper direction in the
+    //			case where root rotation isn't being used.
+    // ------------------------------------------------------------
+    public override AIStateType OnUpdate() {
+        // Do we have a visual threat that is the player
+        if (_zombieStateMachine.VisualThreat.type == AITargetType.Visual_Player) {
             _zombieStateMachine.SetTarget(_zombieStateMachine.VisualThreat);
             return AIStateType.Pursuit;
         }
 
-        if (_zombieStateMachine.VisualThreat.type == AITargetType.Visual_Light)
-        {
+        if (_zombieStateMachine.VisualThreat.type == AITargetType.Visual_Light) {
             _zombieStateMachine.SetTarget(_zombieStateMachine.VisualThreat);
             return AIStateType.Alerted;
         }
 
-        if (_zombieStateMachine.AudioThreat.type == AITargetType.Audio)
-        {
+        // Sound is the third highest priority
+        if (_zombieStateMachine.AudioThreat.type == AITargetType.Audio) {
             _zombieStateMachine.SetTarget(_zombieStateMachine.AudioThreat);
             return AIStateType.Alerted;
         }
 
-        if (_zombieStateMachine.VisualThreat.type == AITargetType.Visual_Food)
-        {
-            if ((1.0f - _zombieStateMachine.satisfaction) > (_zombieStateMachine.VisualThreat.distance / _zombieStateMachine.sensorRadius))
-            {
+        // We have seen a dead body so lets pursue that if we are hungry enough
+        if (_zombieStateMachine.VisualThreat.type == AITargetType.Visual_Food) {
+            // If the distance to hunger ratio means we are hungry enough to stray off the path that far
+            if ((1.0f - _zombieStateMachine.satisfaction) > (_zombieStateMachine.VisualThreat.distance / _zombieStateMachine.sensorRadius)) {
                 _stateMachine.SetTarget(_stateMachine.VisualThreat);
                 return AIStateType.Pursuit;
             }
         }
 
-        float angle = Vector3.Angle(_zombieStateMachine.transform.forward,
-            (_zombieStateMachine.navAgent.steeringTarget - _zombieStateMachine.transform.position));
+        // Calculate angle we need to turn through to be facing our target
+        float angle = Vector3.Angle(_zombieStateMachine.transform.forward, (_zombieStateMachine.navAgent.steeringTarget - _zombieStateMachine.transform.position));
 
-        if (angle > _turnOnSpotThreshold)
-        {
+        // If its too big then drop out of Patrol and into Altered
+        if (angle > _turnOnSpotThreshold) {
             return AIStateType.Alerted;
         }
 
-        if (!_zombieStateMachine.useRootRotation)
-        {
+        // If root rotation is not being used then we are responsible for keeping zombie rotated
+        // and facing in the right direction.
+        if (!_zombieStateMachine.useRootRotation) {
+            // Generate a new Quaternion representing the rotation we should have
             Quaternion newRot = Quaternion.LookRotation(_zombieStateMachine.navAgent.desiredVelocity);
-            _zombieStateMachine.transform.rotation =
-                Quaternion.Slerp(_zombieStateMachine.transform.rotation, newRot, Time.deltaTime * _slerpSpeed);
+
+            // Smoothly rotate to that new rotation over time
+            _zombieStateMachine.transform.rotation = Quaternion.Slerp(_zombieStateMachine.transform.rotation, newRot, Time.deltaTime * _slerpSpeed);
         }
 
-        if (_zombieStateMachine.navAgent.isPathStale || !_zombieStateMachine.navAgent.hasPath || _zombieStateMachine.navAgent.pathStatus != NavMeshPathStatus.PathComplete)
-        {
-            NextWaypoint();
+        // If for any reason the nav agent has lost its path then call the NextWaypoint function
+        // so a new waypoint is selected and a new path assigned to the nav agent.
+        if (_zombieStateMachine.navAgent.isPathStale ||
+            !_zombieStateMachine.navAgent.hasPath ||
+            _zombieStateMachine.navAgent.pathStatus != NavMeshPathStatus.PathComplete) {
+            _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.GetWaypointPosition(true));
         }
 
+        // Stay in Patrol State
         return AIStateType.Patrol;
     }
 
-    private void NextWaypoint()
-    {
-        if (_randomPatrol)
-        {
-            int oldWayPoint = _currentWaypoint;
-            while (_currentWaypoint == oldWayPoint)
-            {
-                _currentWaypoint = Random.Range(0, _waypointNetwork.Waypoints.Count);
-            }
-        }
-        else
-        {
-            _currentWaypoint = (++_currentWaypoint) % _waypointNetwork.Waypoints.Count;
-        }
-        if (_waypointNetwork.Waypoints[_currentWaypoint] != null)
-        {
-            Transform newWayPoint = _waypointNetwork.Waypoints[_currentWaypoint];
-            _zombieStateMachine.SetTarget(AITargetType.Waypoint, null, newWayPoint.position, Vector3.Distance(newWayPoint.position, _zombieStateMachine.transform.position));
-            _zombieStateMachine.navAgent.SetDestination(newWayPoint.position);
-        }
-    }
+    // ----------------------------------------------------------------------
+    // Name	:	OnDestinationReached
+    // Desc	:	Called by the parent StateMachine when the zombie has reached
+    //			its target (entered its target trigger
+    // ----------------------------------------------------------------------
+    public override void OnDestinationReached(bool isReached) {
+        // Only interesting in processing arricals not departures
+        if (_zombieStateMachine == null || !isReached)
+            return;
 
-    public override void OnDestinationReached(bool isReached)
-    {
-        if (_zombieStateMachine == null || !isReached) return;
+        // Select the next waypoint in the waypoint network
         if (_zombieStateMachine.targetType == AITargetType.Waypoint)
-        {
-            NextWaypoint();
-        }
+            _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.GetWaypointPosition(true));
     }
 
-    //public override void OnAnimatorIKUpdated()
-    //{
-    //    if (_zombieStateMachine == null) return;
-    //    _zombieStateMachine.animator.SetLookAtPosition(_zombieStateMachine.targetPosition + Vector3.up);
-    //    _zombieStateMachine.animator.SetLookAtWeight(0.55f);
-    //}
+    // -----------------------------------------------------------------------
+    // Name	:	OnAnimatorIKUpdated
+    // Desc	:	Override IK Goals
+    // -----------------------------------------------------------------------
+    /*public override void 		OnAnimatorIKUpdated()
+	{
+		if (_zombieStateMachine == null)
+			return;
+
+		_zombieStateMachine.animator.SetLookAtPosition ( _zombieStateMachine.targetPosition + Vector3.up );
+		_zombieStateMachine.animator.SetLookAtWeight (0.55f );
+	}*/
 }
