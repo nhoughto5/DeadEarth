@@ -6,13 +6,12 @@ using UnityEngine.AI;
 // DESC		:	Generic Patrolling Behaviour for a Zombie
 // ----------------------------------------------------------------
 public class AIZombieState_Patrol1 : AIZombieState {
-
-    // Inpsector Assigned
-    [SerializeField] private float _turnOnSpotThreshold = 80.0f;
-
     [SerializeField] private float _slerpSpeed = 5.0f;
 
     [SerializeField] [Range(0.0f, 3.0f)] private float _speed = 1.0f;
+
+    // Inpsector Assigned
+    [SerializeField] private float _turnOnSpotThreshold = 80.0f;
 
     // ------------------------------------------------------------
     // Name	:	GetStateType
@@ -21,6 +20,21 @@ public class AIZombieState_Patrol1 : AIZombieState {
     // ------------------------------------------------------------
     public override AIStateType GetStateType() {
         return AIStateType.Patrol;
+    }
+
+    // ----------------------------------------------------------------------
+    // Name	:	OnDestinationReached
+    // Desc	:	Called by the parent StateMachine when the zombie has reached
+    //			its target (entered its target trigger
+    // ----------------------------------------------------------------------
+    public override void OnDestinationReached(bool isReached) {
+        // Only interesting in processing arricals not departures
+        if (_zombieStateMachine == null || !isReached)
+            return;
+
+        // Select the next waypoint in the waypoint network
+        if (_zombieStateMachine.targetType == AITargetType.Waypoint)
+            _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.GetWaypointPosition(true));
     }
 
     // ------------------------------------------------------------------
@@ -45,7 +59,7 @@ public class AIZombieState_Patrol1 : AIZombieState {
         _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.GetWaypointPosition(false));
 
         // Make sure NavAgent is switched on
-        _zombieStateMachine.navAgent.Resume();
+        _zombieStateMachine.navAgent.isStopped = false;
     }
 
     // ------------------------------------------------------------
@@ -83,6 +97,13 @@ public class AIZombieState_Patrol1 : AIZombieState {
             }
         }
 
+        if (_zombieStateMachine.navAgent.pathPending) {
+            _zombieStateMachine.speed = 0;
+            return AIStateType.Patrol;
+        } else {
+            _zombieStateMachine.speed = _speed;
+        }
+
         // Calculate angle we need to turn through to be facing our target
         float angle = Vector3.Angle(_zombieStateMachine.transform.forward, (_zombieStateMachine.navAgent.steeringTarget - _zombieStateMachine.transform.position));
 
@@ -111,21 +132,6 @@ public class AIZombieState_Patrol1 : AIZombieState {
 
         // Stay in Patrol State
         return AIStateType.Patrol;
-    }
-
-    // ----------------------------------------------------------------------
-    // Name	:	OnDestinationReached
-    // Desc	:	Called by the parent StateMachine when the zombie has reached
-    //			its target (entered its target trigger
-    // ----------------------------------------------------------------------
-    public override void OnDestinationReached(bool isReached) {
-        // Only interesting in processing arricals not departures
-        if (_zombieStateMachine == null || !isReached)
-            return;
-
-        // Select the next waypoint in the waypoint network
-        if (_zombieStateMachine.targetType == AITargetType.Waypoint)
-            _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.GetWaypointPosition(true));
     }
 
     // -----------------------------------------------------------------------

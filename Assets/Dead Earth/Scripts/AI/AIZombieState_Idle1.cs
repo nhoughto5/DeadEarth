@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 
 public class AIZombieState_Idle1 : AIZombieState {
-    [SerializeField] private Vector2 _idleTimeRange = new Vector2(10.0f, 30.0f);
-
     private float _idleTime = 0.0f;
+    [SerializeField] private Vector2 _idleTimeRange = new Vector2(10.0f, 30.0f);
     private float _timer = 0.0f;
 
     public override AIStateType GetStateType() {
@@ -52,7 +51,9 @@ public class AIZombieState_Idle1 : AIZombieState {
 
         _timer += Time.deltaTime;
         if (_timer > _idleTime) {
-            return AIStateType.Patrol;
+            _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.GetWaypointPosition(false));
+            _zombieStateMachine.navAgent.isStopped = false;
+            return AIStateType.Alerted;
         }
 
         return AIStateType.Idle;

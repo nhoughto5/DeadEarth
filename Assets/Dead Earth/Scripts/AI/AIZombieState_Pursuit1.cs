@@ -10,9 +10,8 @@ public class AIZombieState_Pursuit1 : AIZombieState {
     [SerializeField] private float _repathVisualMinDuration = 0.05f;
     [SerializeField] private float _slerpSpeed = 5.0f;
     [SerializeField] [Range(0, 10)] private float _speed = 1.0f;
-
-    private float _repathTimer = 0.0f;
-    private float _timer = 0.0f;
+    private float _repathTimer;
+    private float _timer;
 
     public override AIStateType GetStateType() {
         return AIStateType.Pursuit;
@@ -39,15 +38,13 @@ public class AIZombieState_Pursuit1 : AIZombieState {
         _timer += Time.deltaTime;
         _repathTimer += Time.deltaTime;
 
-        if (_timer > _maxDuration) {
+        if (_timer > _maxDuration)
             return AIStateType.Patrol;
-        }
 
-        if (_stateMachine.targetType == AITargetType.Visual_Player && _zombieStateMachine.inMeleeRange) {
+        if (_stateMachine.targetType == AITargetType.Visual_Player && _zombieStateMachine.inMeleeRange)
             return AIStateType.Attack;
-        }
 
-        if (_zombieStateMachine.isTargetReached) {
+        if (_zombieStateMachine.isTargetReached)
             switch (_stateMachine.targetType) {
                 case AITargetType.Audio:
                 case AITargetType.Visual_Light:
@@ -57,34 +54,45 @@ public class AIZombieState_Pursuit1 : AIZombieState {
                 case AITargetType.Visual_Food:
                     return AIStateType.Feeding;
             }
-        }
 
-        if (_zombieStateMachine.navAgent.isPathStale || !_zombieStateMachine.navAgent.hasPath || _zombieStateMachine.navAgent.pathStatus != NavMeshPathStatus.PathComplete) {
+        if (_zombieStateMachine.navAgent.isPathStale ||
+            (!_zombieStateMachine.navAgent.hasPath && !_zombieStateMachine.navAgent.pathPending) ||
+            _zombieStateMachine.navAgent.pathStatus != NavMeshPathStatus.PathComplete) {
             return AIStateType.Alerted;
         }
 
-        // Keep Zombie oriented towards player in pursuit
-        if (!_zombieStateMachine.useRootRotation && _zombieStateMachine.targetType == AITargetType.Visual_Player && _zombieStateMachine.VisualThreat.type == AITargetType.Visual_Player && _zombieStateMachine.isTargetReached) {
-            Vector3 targetPos = _zombieStateMachine.targetPosition;
-            targetPos.y = _zombieStateMachine.transform.position.y;
-            Quaternion newRot = Quaternion.LookRotation(targetPos - _zombieStateMachine.transform.position);
-            _zombieStateMachine.transform.rotation = newRot;
-        } else if (!_stateMachine.useRootRotation && !_zombieStateMachine.isTargetReached) {
-            Quaternion newRot = Quaternion.LookRotation(_zombieStateMachine.navAgent.desiredVelocity);
-            _zombieStateMachine.transform.rotation = Quaternion.Slerp(_zombieStateMachine.transform.rotation, newRot, Time.deltaTime * _slerpSpeed);
-        } else if (_zombieStateMachine.isTargetReached) {
-            return AIStateType.Alerted;
+        if (_zombieStateMachine.navAgent.pathPending) {
+            _zombieStateMachine.speed = 0;
+        } else {
+            _zombieStateMachine.speed = _speed;
+
+            // Keep Zombie oriented towards player in pursuit
+            if (!_zombieStateMachine.useRootRotation && _zombieStateMachine.targetType == AITargetType.Visual_Player &&
+                _zombieStateMachine.VisualThreat.type == AITargetType.Visual_Player && _zombieStateMachine.isTargetReached) {
+                Vector3 targetPos = _zombieStateMachine.targetPosition;
+                targetPos.y = _zombieStateMachine.transform.position.y;
+                Quaternion newRot = Quaternion.LookRotation(targetPos - _zombieStateMachine.transform.position);
+                _zombieStateMachine.transform.rotation = newRot;
+            } else if (!_stateMachine.useRootRotation && !_zombieStateMachine.isTargetReached) {
+                Quaternion newRot = Quaternion.LookRotation(_zombieStateMachine.navAgent.desiredVelocity);
+                _zombieStateMachine.transform.rotation = Quaternion.Slerp(_zombieStateMachine.transform.rotation,
+                    newRot,
+                    Time.deltaTime * _slerpSpeed);
+            } else if (_zombieStateMachine.isTargetReached) {
+                return AIStateType.Alerted;
+            }
         }
 
         // Is the visual threat the player?
         if (_zombieStateMachine.VisualThreat.type == AITargetType.Visual_Player) {
-            if (_zombieStateMachine.targetPosition != _zombieStateMachine.VisualThreat.position) {
-                if (Mathf.Clamp(_zombieStateMachine.VisualThreat.distance * _repathDistanceMultiplier, _repathVisualMinDuration, _repathVisualMaxDuration) < _repathTimer) {
+            if (_zombieStateMachine.targetPosition != _zombieStateMachine.VisualThreat.position)
+                if (Mathf.Clamp(_zombieStateMachine.VisualThreat.distance * _repathDistanceMultiplier,
+                        _repathVisualMinDuration,
+                        _repathVisualMaxDuration) < _repathTimer) {
                     // Repath the agent
                     _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.VisualThreat.position);
                     _repathTimer = 0.0f;
                 }
-            }
             _stateMachine.SetTarget(_zombieStateMachine.VisualThreat);
             return AIStateType.Pursuit;
         }
@@ -99,47 +107,47 @@ public class AIZombieState_Pursuit1 : AIZombieState {
                 _zombieStateMachine.targetType == AITargetType.Visual_Food) {
                 _zombieStateMachine.SetTarget(_zombieStateMachine.VisualThreat);
                 return AIStateType.Alerted;
-            } else if (_zombieStateMachine.targetType == AITargetType.Visual_Light) {
-                int currentID = _zombieStateMachine.targetColliderID;
+            }
+            if (_zombieStateMachine.targetType == AITargetType.Visual_Light) {
+                int currentId = _zombieStateMachine.targetColliderID;
 
                 // Is it the same visual threat as before?
-                if (currentID == _zombieStateMachine.VisualThreat.collider.GetInstanceID()) {
-                    if (_zombieStateMachine.targetPosition != _zombieStateMachine.VisualThreat.position) {
+                if (currentId == _zombieStateMachine.VisualThreat.collider.GetInstanceID()) {
+                    if (_zombieStateMachine.targetPosition != _zombieStateMachine.VisualThreat.position)
                         if (Mathf.Clamp(_zombieStateMachine.VisualThreat.distance * _repathDistanceMultiplier,
-                                _repathVisualMinDuration, _repathVisualMaxDuration) < _repathTimer) {
+                                _repathVisualMinDuration,
+                                _repathVisualMaxDuration) < _repathTimer) {
                             _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.VisualThreat.position);
                             _repathTimer = 0.0f;
                         }
-                    }
                     _zombieStateMachine.SetTarget(_zombieStateMachine.VisualThreat);
                     return AIStateType.Pursuit;
-                } else {
-                    _zombieStateMachine.SetTarget(_zombieStateMachine.VisualThreat);
-                    return AIStateType.Alerted;
                 }
+                _zombieStateMachine.SetTarget(_zombieStateMachine.VisualThreat);
+                return AIStateType.Alerted;
             }
         } else if (_zombieStateMachine.AudioThreat.type == AITargetType.Audio) {
             if (_zombieStateMachine.targetType == AITargetType.Visual_Food) {
                 _zombieStateMachine.SetTarget(_zombieStateMachine.AudioThreat);
                 return AIStateType.Alerted;
-            } else if (_zombieStateMachine.targetType == AITargetType.Audio) {
-                int currentID = _zombieStateMachine.targetColliderID;
+            }
+            if (_zombieStateMachine.targetType == AITargetType.Audio) {
+                int currentId = _zombieStateMachine.targetColliderID;
 
                 // Is it the same audio threat as before
-                if (currentID == _zombieStateMachine.AudioThreat.collider.GetInstanceID()) {
-                    if (_zombieStateMachine.targetPosition != _zombieStateMachine.AudioThreat.position) {
+                if (currentId == _zombieStateMachine.AudioThreat.collider.GetInstanceID()) {
+                    if (_zombieStateMachine.targetPosition != _zombieStateMachine.AudioThreat.position)
                         if (Mathf.Clamp(_zombieStateMachine.AudioThreat.distance * _repathDistanceMultiplier,
-                                _repathAudioMinDuration, _repathAudioMaxDuration) < _repathTimer) {
+                                _repathAudioMinDuration,
+                                _repathAudioMaxDuration) < _repathTimer) {
                             _zombieStateMachine.navAgent.SetDestination(_zombieStateMachine.AudioThreat.position);
                             _repathTimer = 0.0f;
                         }
-                    }
                     _zombieStateMachine.SetTarget(_zombieStateMachine.AudioThreat);
                     return AIStateType.Pursuit;
-                } else {
-                    _zombieStateMachine.SetTarget(_zombieStateMachine.AudioThreat);
-                    return AIStateType.Alerted;
                 }
+                _zombieStateMachine.SetTarget(_zombieStateMachine.AudioThreat);
+                return AIStateType.Alerted;
             }
         }
         return AIStateType.Pursuit;
