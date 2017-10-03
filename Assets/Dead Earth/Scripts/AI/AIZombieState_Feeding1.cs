@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 
 public class AIZombieState_Feeding1 : AIZombieState {
+    [SerializeField] [Range(1, 100)] private int _bloodParticlesBurstAmount = 10;
+    [SerializeField] [Range(0.01f, 1.0f)] private float _bloodParticlesBurstTime = 0.1f;
+    [SerializeField] private Transform _bloodParticlesMount = null;
     private int _eatingLayerIndex = -1;
     private int _eatStateHash = Animator.StringToHash("Feeding State");
     [SerializeField] private float _slerpSpeed = 5.0f;
+    private float _timer = 0.0f;
 
     public override AIStateType GetStateType() {
         return AIStateType.Feeding;
@@ -23,6 +27,7 @@ public class AIZombieState_Feeding1 : AIZombieState {
         _zombieStateMachine.attackType = 0;
 
         _zombieStateMachine.NavAgentControl(true, false);
+        _timer = 0.0f;
     }
 
     public override void OnExitState() {
@@ -31,6 +36,7 @@ public class AIZombieState_Feeding1 : AIZombieState {
     }
 
     public override AIStateType OnUpdate() {
+        _timer += Time.deltaTime;
         if (_zombieStateMachine.satisfaction > 0.9f) {
             // Sets waypoint as next target
             _zombieStateMachine.GetWaypointPosition(false);
@@ -47,8 +53,23 @@ public class AIZombieState_Feeding1 : AIZombieState {
             return AIStateType.Alerted;
         }
 
+        // Is the feeding animation playing?
         if (_zombieStateMachine.animator.GetCurrentAnimatorStateInfo(_eatingLayerIndex).shortNameHash == _eatStateHash) {
+
             _zombieStateMachine.satisfaction = Mathf.Min(_zombieStateMachine.satisfaction + 0.01f * (Time.deltaTime * _zombieStateMachine.replenishRate), 1.0f);
+            if (GameSceneManager.instance && GameSceneManager.instance.bloodParticles && _bloodParticlesMount)
+            {
+                if (_timer > _bloodParticlesBurstTime)
+                {
+                    ParticleSystem system = GameSceneManager.instance.bloodParticles;
+                    system.transform.position = _bloodParticlesMount.transform.position;
+                    system.transform.rotation = _bloodParticlesMount.transform.rotation;
+                    ParticleSystem.MainModule main = system.main;
+                    main.simulationSpace = ParticleSystemSimulationSpace.World;
+                    system.Emit(_bloodParticlesBurstAmount);
+                    _timer = 0.0f;
+                }
+            }
         }
 
         if (!_zombieStateMachine.useRootRotation) {
