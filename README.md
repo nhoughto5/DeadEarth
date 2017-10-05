@@ -129,6 +129,7 @@ Create an empty game object called 'Omni Zombie' and set it to the 'AI Entity' l
 - In Place Animation: Animations which are independent of position. Can often result in a phenomenon known as 'skating' where a character seems to float or skate. Resolved by using animations with 'root motion'.
 - [Mixamo](https://www.mixamo.com/#/): Greate resource for models, animations.... etc
 - **Hashes**: The unity system uses hash values to identify objects and parameters. When retreiving entities with a string it is better to precompute the hash value then search for that hash. 
+- Anything Physics related should be updated in the 'FixedUpdate' method as it is called once per physics step rather than once per frame.
 
 #### Add a trailing camera (3rd person)
  Find the head of the desired model and create an empty child of it. Call it 'Head Cam Mount'. Use 'GameObject' menu shortcut 'Align with view' to move cam mount to desired position. Add a script 'SmoothCameraMount'. Add script to main camera and make the head cam mount the mount object.Change the Update function to LateUpdate and add:

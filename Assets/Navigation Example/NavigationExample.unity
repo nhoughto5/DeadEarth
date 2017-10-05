@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+  m_AmbientSkyColor: {r: 0.066176474, g: 0.066176474, b: 0.066176474, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.11
-  m_AmbientMode: 4
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0.452
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44749928, g: 0.49745017, b: 0.57530564, a: 1}
+  m_IndirectSpecularColor: {r: 0.3059467, g: 0.34182665, b: 0.3977504, a: 0.452}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 433762}
   - component: {fileID: 433764}
   - component: {fileID: 433763}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 7928312}
   - component: {fileID: 7928314}
   - component: {fileID: 7928313}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_070
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 10043866}
   - component: {fileID: 10043868}
   - component: {fileID: 10043867}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_071
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 10928152}
   - component: {fileID: 10928154}
   - component: {fileID: 10928153}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_105
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 20836807}
   - component: {fileID: 20836809}
   - component: {fileID: 20836808}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_099
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 28988464}
   - component: {fileID: 28988466}
   - component: {fileID: 28988465}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_079
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 33676851}
   - component: {fileID: 33676853}
   - component: {fileID: 33676852}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -645,7 +645,7 @@ GameObject:
   - component: {fileID: 35709204}
   - component: {fileID: 35709206}
   - component: {fileID: 35709205}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 37290506}
   - component: {fileID: 37290508}
   - component: {fileID: 37290507}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 63755145}
   - component: {fileID: 63755147}
   - component: {fileID: 63755146}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 67224885}
   - component: {fileID: 67224887}
   - component: {fileID: 67224886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 71207356}
   - component: {fileID: 71207358}
   - component: {fileID: 71207357}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1170,7 +1170,7 @@ GameObject:
   - component: {fileID: 83331433}
   - component: {fileID: 83331435}
   - component: {fileID: 83331434}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,7 +1298,7 @@ GameObject:
   - component: {fileID: 101618909}
   - component: {fileID: 101618911}
   - component: {fileID: 101618910}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1369,7 +1369,7 @@ GameObject:
   - component: {fileID: 103780920}
   - component: {fileID: 103780922}
   - component: {fileID: 103780921}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1441,7 +1441,7 @@ GameObject:
   - component: {fileID: 104389558}
   - component: {fileID: 104389560}
   - component: {fileID: 104389559}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1512,7 +1512,7 @@ GameObject:
   - component: {fileID: 111867849}
   - component: {fileID: 111867851}
   - component: {fileID: 111867850}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1583,7 +1583,7 @@ GameObject:
   - component: {fileID: 114630603}
   - component: {fileID: 114630605}
   - component: {fileID: 114630604}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1683,7 +1683,7 @@ GameObject:
   - component: {fileID: 118571670}
   - component: {fileID: 118571672}
   - component: {fileID: 118571671}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1756,7 +1756,7 @@ GameObject:
   - component: {fileID: 119853454}
   - component: {fileID: 119853456}
   - component: {fileID: 119853455}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1827,7 +1827,7 @@ GameObject:
   - component: {fileID: 126863190}
   - component: {fileID: 126863192}
   - component: {fileID: 126863191}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1899,7 +1899,7 @@ GameObject:
   - component: {fileID: 127699994}
   - component: {fileID: 127699996}
   - component: {fileID: 127699995}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1970,7 +1970,7 @@ GameObject:
   - component: {fileID: 137151792}
   - component: {fileID: 137151794}
   - component: {fileID: 137151793}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2134,7 +2134,7 @@ GameObject:
   - component: {fileID: 149490497}
   - component: {fileID: 149490499}
   - component: {fileID: 149490498}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2206,7 +2206,7 @@ GameObject:
   - component: {fileID: 152225987}
   - component: {fileID: 152225989}
   - component: {fileID: 152225988}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_table_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2277,7 +2277,7 @@ GameObject:
   - component: {fileID: 154913504}
   - component: {fileID: 154913506}
   - component: {fileID: 154913505}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2339,6 +2339,71 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 154913503}
   m_Mesh: {fileID: 4300820, guid: 8a2d23da643cb0d4a9ca6c6f1fffa66b, type: 3}
+--- !u!1 &156700291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 156700292}
+  - component: {fileID: 156700293}
+  m_Layer: 11
+  m_Name: FPS Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &156700292
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 156700291}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 163660472}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &156700293
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 156700291}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.089965396, g: 0.10073048, b: 0.11764705, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: 3
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
 --- !u!1 &157330965
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,7 +2414,7 @@ GameObject:
   - component: {fileID: 157330966}
   - component: {fileID: 157330968}
   - component: {fileID: 157330967}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2448,7 +2513,7 @@ GameObject:
   - component: {fileID: 163556135}
   - component: {fileID: 163556137}
   - component: {fileID: 163556136}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2511,6 +2576,79 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 163556134}
   m_Mesh: {fileID: 4300094, guid: 8a2d23da643cb0d4a9ca6c6f1fffa66b, type: 3}
+--- !u!1 &163660471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 163660472}
+  - component: {fileID: 163660474}
+  - component: {fileID: 163660473}
+  m_Layer: 11
+  m_Name: FPS Controller Rig
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163660472
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 163660471}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.75, y: 0.97, z: 29.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 156700292}
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &163660473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 163660471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4430e17576825e04c9799b424431ea7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runSpeed: 4.5
+  _walkSpeed: 1
+  _jumpSpeed: 7.5
+  _stickToGroundForce: 5
+  _gravityMultiplier: 2.5
+  _mouseLook:
+    XSensitivity: 2
+    YSensitivity: 2
+    clampVerticalRotation: 1
+    MinimumX: -90
+    MaximumX: 90
+    smooth: 0
+    smoothTime: 5
+    lockCursor: 1
+--- !u!143 &163660474
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 163660471}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1.8
+  m_Radius: 0.4
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &170178238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,7 +2659,7 @@ GameObject:
   - component: {fileID: 170178239}
   - component: {fileID: 170178241}
   - component: {fileID: 170178240}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2646,7 +2784,7 @@ GameObject:
   - component: {fileID: 176948457}
   - component: {fileID: 176948459}
   - component: {fileID: 176948458}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2717,7 +2855,7 @@ GameObject:
   - component: {fileID: 177413919}
   - component: {fileID: 177413921}
   - component: {fileID: 177413920}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2818,7 +2956,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.97794116, g: 0.86011213, b: 0.78379107, a: 1}
+  m_Color: {r: 0.16176468, g: 0.14516166, b: 0.13440742, a: 1}
   m_Intensity: 0.64
   m_Range: 1056.4
   m_SpotAngle: 30
@@ -2869,7 +3007,7 @@ GameObject:
   - component: {fileID: 177857636}
   - component: {fileID: 177857638}
   - component: {fileID: 177857637}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2942,7 +3080,7 @@ GameObject:
   - component: {fileID: 180060164}
   - component: {fileID: 180060166}
   - component: {fileID: 180060165}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_086
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3013,7 +3151,7 @@ GameObject:
   - component: {fileID: 186630753}
   - component: {fileID: 186630755}
   - component: {fileID: 186630754}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3084,7 +3222,7 @@ GameObject:
   - component: {fileID: 194363219}
   - component: {fileID: 194363221}
   - component: {fileID: 194363220}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3155,7 +3293,7 @@ GameObject:
   - component: {fileID: 210544099}
   - component: {fileID: 210544101}
   - component: {fileID: 210544100}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3227,7 +3365,7 @@ GameObject:
   - component: {fileID: 214247456}
   - component: {fileID: 214247458}
   - component: {fileID: 214247457}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3298,7 +3436,7 @@ GameObject:
   - component: {fileID: 214394245}
   - component: {fileID: 214394247}
   - component: {fileID: 214394246}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3371,7 +3509,7 @@ GameObject:
   - component: {fileID: 218598150}
   - component: {fileID: 218598152}
   - component: {fileID: 218598151}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3444,7 +3582,7 @@ GameObject:
   - component: {fileID: 240364325}
   - component: {fileID: 240364327}
   - component: {fileID: 240364326}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3516,7 +3654,7 @@ GameObject:
   - component: {fileID: 242302182}
   - component: {fileID: 242302184}
   - component: {fileID: 242302183}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3587,7 +3725,7 @@ GameObject:
   - component: {fileID: 247920554}
   - component: {fileID: 247920556}
   - component: {fileID: 247920555}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3658,7 +3796,7 @@ GameObject:
   - component: {fileID: 248094300}
   - component: {fileID: 248094302}
   - component: {fileID: 248094301}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3729,7 +3867,7 @@ GameObject:
   - component: {fileID: 255950758}
   - component: {fileID: 255950760}
   - component: {fileID: 255950759}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3829,7 +3967,7 @@ GameObject:
   - component: {fileID: 265782484}
   - component: {fileID: 265782486}
   - component: {fileID: 265782485}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3900,7 +4038,7 @@ GameObject:
   - component: {fileID: 273442468}
   - component: {fileID: 273442470}
   - component: {fileID: 273442469}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4000,7 +4138,7 @@ GameObject:
   - component: {fileID: 281745397}
   - component: {fileID: 281745399}
   - component: {fileID: 281745398}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4162,7 +4300,7 @@ GameObject:
   - component: {fileID: 302935360}
   - component: {fileID: 302935362}
   - component: {fileID: 302935361}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4235,7 +4373,7 @@ GameObject:
   - component: {fileID: 307712920}
   - component: {fileID: 307712922}
   - component: {fileID: 307712921}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4306,7 +4444,7 @@ GameObject:
   - component: {fileID: 310746672}
   - component: {fileID: 310746674}
   - component: {fileID: 310746673}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4377,7 +4515,7 @@ GameObject:
   - component: {fileID: 312213293}
   - component: {fileID: 312213295}
   - component: {fileID: 312213294}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_115
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4448,7 +4586,7 @@ GameObject:
   - component: {fileID: 315566611}
   - component: {fileID: 315566613}
   - component: {fileID: 315566612}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_073
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4547,7 +4685,7 @@ GameObject:
   - component: {fileID: 332904356}
   - component: {fileID: 332904358}
   - component: {fileID: 332904357}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_117
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4618,7 +4756,7 @@ GameObject:
   - component: {fileID: 334708003}
   - component: {fileID: 334708005}
   - component: {fileID: 334708004}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4717,7 +4855,7 @@ GameObject:
   - component: {fileID: 337857105}
   - component: {fileID: 337857107}
   - component: {fileID: 337857106}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4790,7 +4928,7 @@ GameObject:
   - component: {fileID: 341250161}
   - component: {fileID: 341250163}
   - component: {fileID: 341250162}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4863,7 +5001,7 @@ GameObject:
   - component: {fileID: 344527035}
   - component: {fileID: 344527037}
   - component: {fileID: 344527036}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4989,7 +5127,7 @@ GameObject:
   - component: {fileID: 347729082}
   - component: {fileID: 347729084}
   - component: {fileID: 347729083}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5060,7 +5198,7 @@ GameObject:
   - component: {fileID: 349401864}
   - component: {fileID: 349401866}
   - component: {fileID: 349401865}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5131,7 +5269,7 @@ GameObject:
   - component: {fileID: 355373956}
   - component: {fileID: 355373958}
   - component: {fileID: 355373957}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5203,7 +5341,7 @@ GameObject:
   - component: {fileID: 356921150}
   - component: {fileID: 356921152}
   - component: {fileID: 356921151}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5301,7 +5439,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 366585745}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: walls_boundary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5391,7 +5529,7 @@ GameObject:
   - component: {fileID: 367571812}
   - component: {fileID: 367571814}
   - component: {fileID: 367571813}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5464,7 +5602,7 @@ GameObject:
   - component: {fileID: 367995873}
   - component: {fileID: 367995875}
   - component: {fileID: 367995874}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5535,7 +5673,7 @@ GameObject:
   - component: {fileID: 370084082}
   - component: {fileID: 370084084}
   - component: {fileID: 370084083}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5608,7 +5746,7 @@ GameObject:
   - component: {fileID: 371247872}
   - component: {fileID: 371247874}
   - component: {fileID: 371247873}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5708,7 +5846,7 @@ GameObject:
   - component: {fileID: 373178376}
   - component: {fileID: 373178378}
   - component: {fileID: 373178377}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5781,7 +5919,7 @@ GameObject:
   - component: {fileID: 376642022}
   - component: {fileID: 376642024}
   - component: {fileID: 376642023}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5852,7 +5990,7 @@ GameObject:
   - component: {fileID: 377696476}
   - component: {fileID: 377696478}
   - component: {fileID: 377696477}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_098
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6058,7 +6196,7 @@ GameObject:
   - component: {fileID: 386789149}
   - component: {fileID: 386789151}
   - component: {fileID: 386789150}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6129,7 +6267,7 @@ GameObject:
   - component: {fileID: 389769706}
   - component: {fileID: 389769708}
   - component: {fileID: 389769707}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6200,7 +6338,7 @@ GameObject:
   - component: {fileID: 405650874}
   - component: {fileID: 405650876}
   - component: {fileID: 405650875}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6272,7 +6410,7 @@ GameObject:
   - component: {fileID: 408121300}
   - component: {fileID: 408121302}
   - component: {fileID: 408121301}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6285,7 +6423,7 @@ Transform:
   m_PrefabParentObject: {fileID: 494236, guid: 22e8e9479d52a604abc938e32f8c8873, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 408121299}
-  m_LocalRotation: {x: -0.6648625, y: 0.3207145, z: 0.16649629, w: 0.6537423}
+  m_LocalRotation: {x: -0.6648626, y: 0.32071453, z: 0.1664963, w: 0.6537424}
   m_LocalPosition: {x: 1.4393446, y: 1.035033, z: 12.526718}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
@@ -6371,7 +6509,7 @@ GameObject:
   - component: {fileID: 409685952}
   - component: {fileID: 409685954}
   - component: {fileID: 409685953}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_082
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6442,7 +6580,7 @@ GameObject:
   - component: {fileID: 414944502}
   - component: {fileID: 414944504}
   - component: {fileID: 414944503}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6514,7 +6652,7 @@ GameObject:
   - component: {fileID: 415865610}
   - component: {fileID: 415865612}
   - component: {fileID: 415865611}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6585,7 +6723,7 @@ GameObject:
   - component: {fileID: 422750331}
   - component: {fileID: 422750333}
   - component: {fileID: 422750332}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_088
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6656,7 +6794,7 @@ GameObject:
   - component: {fileID: 426931982}
   - component: {fileID: 426931984}
   - component: {fileID: 426931983}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6727,7 +6865,7 @@ GameObject:
   - component: {fileID: 429356679}
   - component: {fileID: 429356681}
   - component: {fileID: 429356680}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6827,7 +6965,7 @@ GameObject:
   - component: {fileID: 435537163}
   - component: {fileID: 435537165}
   - component: {fileID: 435537164}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6898,7 +7036,7 @@ GameObject:
   - component: {fileID: 435577292}
   - component: {fileID: 435577294}
   - component: {fileID: 435577293}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6971,7 +7109,7 @@ GameObject:
   - component: {fileID: 440773365}
   - component: {fileID: 440773367}
   - component: {fileID: 440773366}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7042,7 +7180,7 @@ GameObject:
   - component: {fileID: 444250051}
   - component: {fileID: 444250053}
   - component: {fileID: 444250052}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7114,7 +7252,7 @@ GameObject:
   - component: {fileID: 446839402}
   - component: {fileID: 446839404}
   - component: {fileID: 446839403}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7214,7 +7352,7 @@ GameObject:
   - component: {fileID: 453002248}
   - component: {fileID: 453002250}
   - component: {fileID: 453002249}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7341,7 +7479,7 @@ GameObject:
   - component: {fileID: 485827792}
   - component: {fileID: 485827794}
   - component: {fileID: 485827793}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7596,7 +7734,7 @@ GameObject:
   - component: {fileID: 492480091}
   - component: {fileID: 492480093}
   - component: {fileID: 492480092}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_067
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7667,7 +7805,7 @@ GameObject:
   - component: {fileID: 494798925}
   - component: {fileID: 494798927}
   - component: {fileID: 494798926}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7738,7 +7876,7 @@ GameObject:
   - component: {fileID: 499780672}
   - component: {fileID: 499780674}
   - component: {fileID: 499780673}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_107
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7809,7 +7947,7 @@ GameObject:
   - component: {fileID: 499831410}
   - component: {fileID: 499831412}
   - component: {fileID: 499831411}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7882,7 +8020,7 @@ GameObject:
   - component: {fileID: 503998591}
   - component: {fileID: 503998593}
   - component: {fileID: 503998592}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7954,7 +8092,7 @@ GameObject:
   - component: {fileID: 517476414}
   - component: {fileID: 517476416}
   - component: {fileID: 517476415}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_antenna_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8025,7 +8163,7 @@ GameObject:
   - component: {fileID: 535246922}
   - component: {fileID: 535246924}
   - component: {fileID: 535246923}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8096,7 +8234,7 @@ GameObject:
   - component: {fileID: 536072957}
   - component: {fileID: 536072959}
   - component: {fileID: 536072958}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8167,7 +8305,7 @@ GameObject:
   - component: {fileID: 540303537}
   - component: {fileID: 540303539}
   - component: {fileID: 540303538}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8240,7 +8378,7 @@ GameObject:
   - component: {fileID: 544774978}
   - component: {fileID: 544774980}
   - component: {fileID: 544774979}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8339,7 +8477,7 @@ GameObject:
   - component: {fileID: 559585104}
   - component: {fileID: 559585106}
   - component: {fileID: 559585105}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8410,7 +8548,7 @@ GameObject:
   - component: {fileID: 560061933}
   - component: {fileID: 560061935}
   - component: {fileID: 560061934}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8481,7 +8619,7 @@ GameObject:
   - component: {fileID: 560448801}
   - component: {fileID: 560448803}
   - component: {fileID: 560448802}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8552,7 +8690,7 @@ GameObject:
   - component: {fileID: 561011224}
   - component: {fileID: 561011226}
   - component: {fileID: 561011225}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_104
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8651,7 +8789,7 @@ GameObject:
   - component: {fileID: 563830811}
   - component: {fileID: 563830813}
   - component: {fileID: 563830812}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8759,7 +8897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &569433903
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8880,7 +9018,7 @@ GameObject:
   - component: {fileID: 572048864}
   - component: {fileID: 572048866}
   - component: {fileID: 572048865}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9008,7 +9146,7 @@ GameObject:
   - component: {fileID: 580260172}
   - component: {fileID: 580260174}
   - component: {fileID: 580260173}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9080,7 +9218,7 @@ GameObject:
   - component: {fileID: 584610846}
   - component: {fileID: 584610848}
   - component: {fileID: 584610847}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9152,7 +9290,7 @@ GameObject:
   - component: {fileID: 587218768}
   - component: {fileID: 587218770}
   - component: {fileID: 587218769}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9223,7 +9361,7 @@ GameObject:
   - component: {fileID: 587460954}
   - component: {fileID: 587460956}
   - component: {fileID: 587460955}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9294,7 +9432,7 @@ GameObject:
   - component: {fileID: 587784468}
   - component: {fileID: 587784470}
   - component: {fileID: 587784469}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9365,7 +9503,7 @@ GameObject:
   - component: {fileID: 588403630}
   - component: {fileID: 588403632}
   - component: {fileID: 588403631}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9464,7 +9602,7 @@ GameObject:
   - component: {fileID: 595433299}
   - component: {fileID: 595433301}
   - component: {fileID: 595433300}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9535,7 +9673,7 @@ GameObject:
   - component: {fileID: 595583231}
   - component: {fileID: 595583233}
   - component: {fileID: 595583232}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9608,7 +9746,7 @@ GameObject:
   - component: {fileID: 595603118}
   - component: {fileID: 595603120}
   - component: {fileID: 595603119}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_060
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9788,7 +9926,7 @@ GameObject:
   - component: {fileID: 606101294}
   - component: {fileID: 606101296}
   - component: {fileID: 606101295}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9861,7 +9999,7 @@ GameObject:
   - component: {fileID: 607434131}
   - component: {fileID: 607434133}
   - component: {fileID: 607434132}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9933,7 +10071,7 @@ GameObject:
   - component: {fileID: 621047588}
   - component: {fileID: 621047590}
   - component: {fileID: 621047589}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10033,7 +10171,7 @@ GameObject:
   - component: {fileID: 626207888}
   - component: {fileID: 626207890}
   - component: {fileID: 626207889}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_072
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10174,7 +10312,7 @@ MonoBehaviour:
   _stoppingDistance: 1
   _aggression: 0.5
   _depletionRate: 0.1
-  _fov: 60
+  _fov: 180
   _health: 100
   _hearing: 1
   _intelligence: 0.5
@@ -10315,7 +10453,7 @@ GameObject:
   - component: {fileID: 629500672}
   - component: {fileID: 629500674}
   - component: {fileID: 629500673}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10387,7 +10525,7 @@ GameObject:
   - component: {fileID: 631416335}
   - component: {fileID: 631416337}
   - component: {fileID: 631416336}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10459,7 +10597,7 @@ GameObject:
   - component: {fileID: 634285303}
   - component: {fileID: 634285305}
   - component: {fileID: 634285304}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10530,7 +10668,7 @@ GameObject:
   - component: {fileID: 637620514}
   - component: {fileID: 637620516}
   - component: {fileID: 637620515}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10601,7 +10739,7 @@ GameObject:
   - component: {fileID: 637915033}
   - component: {fileID: 637915035}
   - component: {fileID: 637915034}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10672,7 +10810,7 @@ GameObject:
   - component: {fileID: 648190238}
   - component: {fileID: 648190240}
   - component: {fileID: 648190239}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10771,7 +10909,7 @@ GameObject:
   - component: {fileID: 650828813}
   - component: {fileID: 650828815}
   - component: {fileID: 650828814}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10842,7 +10980,7 @@ GameObject:
   - component: {fileID: 654240604}
   - component: {fileID: 654240606}
   - component: {fileID: 654240605}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10913,7 +11051,7 @@ GameObject:
   - component: {fileID: 655582199}
   - component: {fileID: 655582201}
   - component: {fileID: 655582200}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10986,7 +11124,7 @@ GameObject:
   - component: {fileID: 660963394}
   - component: {fileID: 660963396}
   - component: {fileID: 660963395}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11059,7 +11197,7 @@ GameObject:
   - component: {fileID: 665849473}
   - component: {fileID: 665849475}
   - component: {fileID: 665849474}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11130,7 +11268,7 @@ GameObject:
   - component: {fileID: 667627112}
   - component: {fileID: 667627114}
   - component: {fileID: 667627113}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11201,7 +11339,7 @@ GameObject:
   - component: {fileID: 668714516}
   - component: {fileID: 668714518}
   - component: {fileID: 668714517}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_111
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11272,7 +11410,7 @@ GameObject:
   - component: {fileID: 670586341}
   - component: {fileID: 670586343}
   - component: {fileID: 670586342}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11344,7 +11482,7 @@ GameObject:
   - component: {fileID: 671742168}
   - component: {fileID: 671742170}
   - component: {fileID: 671742169}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11470,7 +11608,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 681442424}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: walls_inner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11564,7 +11702,7 @@ GameObject:
   - component: {fileID: 682940149}
   - component: {fileID: 682940151}
   - component: {fileID: 682940150}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11636,7 +11774,7 @@ GameObject:
   - component: {fileID: 692327404}
   - component: {fileID: 692327406}
   - component: {fileID: 692327405}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11708,7 +11846,7 @@ GameObject:
   - component: {fileID: 703163785}
   - component: {fileID: 703163787}
   - component: {fileID: 703163786}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11781,7 +11919,7 @@ GameObject:
   - component: {fileID: 706953557}
   - component: {fileID: 706953559}
   - component: {fileID: 706953558}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11939,7 +12077,7 @@ GameObject:
   - component: {fileID: 719315437}
   - component: {fileID: 719315439}
   - component: {fileID: 719315438}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12012,7 +12150,7 @@ GameObject:
   - component: {fileID: 720487712}
   - component: {fileID: 720487714}
   - component: {fileID: 720487713}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_106
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12083,7 +12221,7 @@ GameObject:
   - component: {fileID: 731690445}
   - component: {fileID: 731690447}
   - component: {fileID: 731690446}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12156,7 +12294,7 @@ GameObject:
   - component: {fileID: 737114642}
   - component: {fileID: 737114644}
   - component: {fileID: 737114643}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12228,7 +12366,7 @@ GameObject:
   - component: {fileID: 737656200}
   - component: {fileID: 737656202}
   - component: {fileID: 737656201}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12300,7 +12438,7 @@ GameObject:
   - component: {fileID: 744099800}
   - component: {fileID: 744099802}
   - component: {fileID: 744099801}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12400,7 +12538,7 @@ GameObject:
   - component: {fileID: 752876184}
   - component: {fileID: 752876186}
   - component: {fileID: 752876185}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12471,7 +12609,7 @@ GameObject:
   - component: {fileID: 753489834}
   - component: {fileID: 753489836}
   - component: {fileID: 753489835}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_049
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12543,7 +12681,7 @@ GameObject:
   - component: {fileID: 754445930}
   - component: {fileID: 754445932}
   - component: {fileID: 754445931}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12643,7 +12781,7 @@ GameObject:
   - component: {fileID: 758769147}
   - component: {fileID: 758769149}
   - component: {fileID: 758769148}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12716,7 +12854,7 @@ GameObject:
   - component: {fileID: 762726408}
   - component: {fileID: 762726410}
   - component: {fileID: 762726409}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12788,7 +12926,7 @@ GameObject:
   - component: {fileID: 764343082}
   - component: {fileID: 764343084}
   - component: {fileID: 764343083}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12859,7 +12997,7 @@ GameObject:
   - component: {fileID: 764903244}
   - component: {fileID: 764903246}
   - component: {fileID: 764903245}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_087
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12958,7 +13096,7 @@ GameObject:
   - component: {fileID: 773438381}
   - component: {fileID: 773438383}
   - component: {fileID: 773438382}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13029,7 +13167,7 @@ GameObject:
   - component: {fileID: 775847567}
   - component: {fileID: 775847569}
   - component: {fileID: 775847568}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13100,7 +13238,7 @@ GameObject:
   - component: {fileID: 778493529}
   - component: {fileID: 778493531}
   - component: {fileID: 778493530}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13169,7 +13307,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 783354681}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13521,7 +13659,7 @@ GameObject:
   - component: {fileID: 800061405}
   - component: {fileID: 800061407}
   - component: {fileID: 800061406}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_056
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13592,7 +13730,7 @@ GameObject:
   - component: {fileID: 801706101}
   - component: {fileID: 801706103}
   - component: {fileID: 801706102}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13664,7 +13802,7 @@ GameObject:
   - component: {fileID: 802182025}
   - component: {fileID: 802182027}
   - component: {fileID: 802182026}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_096
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13735,7 +13873,7 @@ GameObject:
   - component: {fileID: 802203052}
   - component: {fileID: 802203054}
   - component: {fileID: 802203053}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_109
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13806,7 +13944,7 @@ GameObject:
   - component: {fileID: 806188088}
   - component: {fileID: 806188090}
   - component: {fileID: 806188089}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13877,7 +14015,7 @@ GameObject:
   - component: {fileID: 807788224}
   - component: {fileID: 807788226}
   - component: {fileID: 807788225}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13948,7 +14086,7 @@ GameObject:
   - component: {fileID: 813552403}
   - component: {fileID: 813552405}
   - component: {fileID: 813552404}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_089
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14019,7 +14157,7 @@ GameObject:
   - component: {fileID: 813984254}
   - component: {fileID: 813984256}
   - component: {fileID: 813984255}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14090,7 +14228,7 @@ GameObject:
   - component: {fileID: 821553041}
   - component: {fileID: 821553043}
   - component: {fileID: 821553042}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14163,7 +14301,7 @@ GameObject:
   - component: {fileID: 824941064}
   - component: {fileID: 824941066}
   - component: {fileID: 824941065}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14234,7 +14372,7 @@ GameObject:
   - component: {fileID: 827161645}
   - component: {fileID: 827161647}
   - component: {fileID: 827161646}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14305,7 +14443,7 @@ GameObject:
   - component: {fileID: 830575793}
   - component: {fileID: 830575795}
   - component: {fileID: 830575794}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14376,7 +14514,7 @@ GameObject:
   - component: {fileID: 833003413}
   - component: {fileID: 833003415}
   - component: {fileID: 833003414}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_097
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14447,7 +14585,7 @@ GameObject:
   - component: {fileID: 838196697}
   - component: {fileID: 838196699}
   - component: {fileID: 838196698}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14520,7 +14658,7 @@ GameObject:
   - component: {fileID: 838793587}
   - component: {fileID: 838793589}
   - component: {fileID: 838793588}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14591,7 +14729,7 @@ GameObject:
   - component: {fileID: 841519078}
   - component: {fileID: 841519080}
   - component: {fileID: 841519079}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14662,7 +14800,7 @@ GameObject:
   - component: {fileID: 843948460}
   - component: {fileID: 843948462}
   - component: {fileID: 843948461}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14819,7 +14957,7 @@ GameObject:
   - component: {fileID: 857591495}
   - component: {fileID: 857591497}
   - component: {fileID: 857591496}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15018,7 +15156,7 @@ GameObject:
   - component: {fileID: 870459168}
   - component: {fileID: 870459170}
   - component: {fileID: 870459169}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15091,7 +15229,7 @@ GameObject:
   - component: {fileID: 874386794}
   - component: {fileID: 874386796}
   - component: {fileID: 874386795}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15162,7 +15300,7 @@ GameObject:
   - component: {fileID: 879637243}
   - component: {fileID: 879637245}
   - component: {fileID: 879637244}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15233,7 +15371,7 @@ GameObject:
   - component: {fileID: 881878908}
   - component: {fileID: 881878910}
   - component: {fileID: 881878909}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_076
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15333,7 +15471,7 @@ GameObject:
   - component: {fileID: 886200378}
   - component: {fileID: 886200380}
   - component: {fileID: 886200379}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15405,7 +15543,7 @@ GameObject:
   - component: {fileID: 889693300}
   - component: {fileID: 889693302}
   - component: {fileID: 889693301}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15595,7 +15733,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1406246793
+  randomSeed: 2086479602
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -18821,7 +18959,7 @@ GameObject:
   - component: {fileID: 901425207}
   - component: {fileID: 901425209}
   - component: {fileID: 901425208}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18921,7 +19059,7 @@ GameObject:
   - component: {fileID: 908387692}
   - component: {fileID: 908387694}
   - component: {fileID: 908387693}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18994,7 +19132,7 @@ GameObject:
   - component: {fileID: 914084825}
   - component: {fileID: 914084827}
   - component: {fileID: 914084826}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19096,7 +19234,7 @@ GameObject:
   - component: {fileID: 914430380}
   - component: {fileID: 914430382}
   - component: {fileID: 914430381}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19167,7 +19305,7 @@ GameObject:
   - component: {fileID: 922753237}
   - component: {fileID: 922753239}
   - component: {fileID: 922753238}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19271,7 +19409,7 @@ GameObject:
   - component: {fileID: 926553897}
   - component: {fileID: 926553899}
   - component: {fileID: 926553898}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19479,7 +19617,7 @@ GameObject:
   - component: {fileID: 936667652}
   - component: {fileID: 936667654}
   - component: {fileID: 936667653}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19581,7 +19719,7 @@ GameObject:
   - component: {fileID: 943662225}
   - component: {fileID: 943662227}
   - component: {fileID: 943662226}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19652,7 +19790,7 @@ GameObject:
   - component: {fileID: 954551789}
   - component: {fileID: 954551791}
   - component: {fileID: 954551790}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19752,7 +19890,7 @@ GameObject:
   - component: {fileID: 961482095}
   - component: {fileID: 961482097}
   - component: {fileID: 961482096}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_077
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19823,7 +19961,7 @@ GameObject:
   - component: {fileID: 967037425}
   - component: {fileID: 967037427}
   - component: {fileID: 967037426}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19952,7 +20090,7 @@ GameObject:
   - component: {fileID: 974507277}
   - component: {fileID: 974507279}
   - component: {fileID: 974507278}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20023,7 +20161,7 @@ GameObject:
   - component: {fileID: 974847989}
   - component: {fileID: 974847991}
   - component: {fileID: 974847990}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20094,7 +20232,7 @@ GameObject:
   - component: {fileID: 975582185}
   - component: {fileID: 975582187}
   - component: {fileID: 975582186}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20165,7 +20303,7 @@ GameObject:
   - component: {fileID: 977862097}
   - component: {fileID: 977862099}
   - component: {fileID: 977862098}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20236,7 +20374,7 @@ GameObject:
   - component: {fileID: 987396540}
   - component: {fileID: 987396542}
   - component: {fileID: 987396541}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20308,7 +20446,7 @@ GameObject:
   - component: {fileID: 999535602}
   - component: {fileID: 999535604}
   - component: {fileID: 999535603}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20379,7 +20517,7 @@ GameObject:
   - component: {fileID: 1003153223}
   - component: {fileID: 1003153225}
   - component: {fileID: 1003153224}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20507,7 +20645,7 @@ GameObject:
   - component: {fileID: 1010336561}
   - component: {fileID: 1010336563}
   - component: {fileID: 1010336562}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20605,7 +20743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1014274782}
   - component: {fileID: 1014274781}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Navigation Example Geometry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20715,7 +20853,7 @@ GameObject:
   - component: {fileID: 1019525793}
   - component: {fileID: 1019525795}
   - component: {fileID: 1019525794}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20786,7 +20924,7 @@ GameObject:
   - component: {fileID: 1020409177}
   - component: {fileID: 1020409179}
   - component: {fileID: 1020409178}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20885,7 +21023,7 @@ GameObject:
   - component: {fileID: 1021326688}
   - component: {fileID: 1021326690}
   - component: {fileID: 1021326689}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_031
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20958,7 +21096,7 @@ GameObject:
   - component: {fileID: 1031668596}
   - component: {fileID: 1031668598}
   - component: {fileID: 1031668597}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_057
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21076,7 +21214,7 @@ GameObject:
   - component: {fileID: 1035145984}
   - component: {fileID: 1035145986}
   - component: {fileID: 1035145985}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_064
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21147,7 +21285,7 @@ GameObject:
   - component: {fileID: 1038547254}
   - component: {fileID: 1038547256}
   - component: {fileID: 1038547255}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21219,7 +21357,7 @@ GameObject:
   - component: {fileID: 1047994772}
   - component: {fileID: 1047994774}
   - component: {fileID: 1047994773}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21291,7 +21429,7 @@ GameObject:
   - component: {fileID: 1050843077}
   - component: {fileID: 1050843079}
   - component: {fileID: 1050843078}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21364,7 +21502,7 @@ GameObject:
   - component: {fileID: 1052981532}
   - component: {fileID: 1052981534}
   - component: {fileID: 1052981533}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_090
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21465,7 +21603,7 @@ GameObject:
   - component: {fileID: 1054589914}
   - component: {fileID: 1054589916}
   - component: {fileID: 1054589915}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21538,7 +21676,7 @@ GameObject:
   - component: {fileID: 1066157775}
   - component: {fileID: 1066157777}
   - component: {fileID: 1066157776}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21611,7 +21749,7 @@ GameObject:
   - component: {fileID: 1070047449}
   - component: {fileID: 1070047451}
   - component: {fileID: 1070047450}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21682,7 +21820,7 @@ GameObject:
   - component: {fileID: 1078944965}
   - component: {fileID: 1078944967}
   - component: {fileID: 1078944966}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21753,7 +21891,7 @@ GameObject:
   - component: {fileID: 1084952683}
   - component: {fileID: 1084952685}
   - component: {fileID: 1084952684}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_060
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21824,7 +21962,7 @@ GameObject:
   - component: {fileID: 1091479187}
   - component: {fileID: 1091479189}
   - component: {fileID: 1091479188}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21923,7 +22061,7 @@ GameObject:
   - component: {fileID: 1098831286}
   - component: {fileID: 1098831288}
   - component: {fileID: 1098831287}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21995,7 +22133,7 @@ GameObject:
   - component: {fileID: 1098980448}
   - component: {fileID: 1098980450}
   - component: {fileID: 1098980449}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_113
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22066,7 +22204,7 @@ GameObject:
   - component: {fileID: 1099773046}
   - component: {fileID: 1099773048}
   - component: {fileID: 1099773047}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_095
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22311,7 +22449,7 @@ GameObject:
   - component: {fileID: 1115055993}
   - component: {fileID: 1115055995}
   - component: {fileID: 1115055994}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22409,7 +22547,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1123738007}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22448,7 +22586,7 @@ GameObject:
   - component: {fileID: 1123789011}
   - component: {fileID: 1123789013}
   - component: {fileID: 1123789012}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_060
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22519,7 +22657,7 @@ GameObject:
   - component: {fileID: 1124604878}
   - component: {fileID: 1124604880}
   - component: {fileID: 1124604879}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22591,7 +22729,7 @@ GameObject:
   - component: {fileID: 1124752222}
   - component: {fileID: 1124752224}
   - component: {fileID: 1124752223}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22664,7 +22802,7 @@ GameObject:
   - component: {fileID: 1130026373}
   - component: {fileID: 1130026375}
   - component: {fileID: 1130026374}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22737,7 +22875,7 @@ GameObject:
   - component: {fileID: 1135201431}
   - component: {fileID: 1135201433}
   - component: {fileID: 1135201432}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22808,7 +22946,7 @@ GameObject:
   - component: {fileID: 1139733777}
   - component: {fileID: 1139733779}
   - component: {fileID: 1139733778}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_078
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22908,7 +23046,7 @@ GameObject:
   - component: {fileID: 1153127996}
   - component: {fileID: 1153127998}
   - component: {fileID: 1153127997}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23008,7 +23146,7 @@ GameObject:
   - component: {fileID: 1162853070}
   - component: {fileID: 1162853072}
   - component: {fileID: 1162853071}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23080,7 +23218,7 @@ GameObject:
   - component: {fileID: 1169944542}
   - component: {fileID: 1169944544}
   - component: {fileID: 1169944543}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23152,7 +23290,7 @@ GameObject:
   - component: {fileID: 1172693592}
   - component: {fileID: 1172693594}
   - component: {fileID: 1172693593}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23223,7 +23361,7 @@ GameObject:
   - component: {fileID: 1173966595}
   - component: {fileID: 1173966597}
   - component: {fileID: 1173966596}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23294,7 +23432,7 @@ GameObject:
   - component: {fileID: 1182303032}
   - component: {fileID: 1182303034}
   - component: {fileID: 1182303033}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23365,7 +23503,7 @@ GameObject:
   - component: {fileID: 1183133129}
   - component: {fileID: 1183133131}
   - component: {fileID: 1183133130}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23436,7 +23574,7 @@ GameObject:
   - component: {fileID: 1184209295}
   - component: {fileID: 1184209297}
   - component: {fileID: 1184209296}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23509,7 +23647,7 @@ GameObject:
   - component: {fileID: 1185682311}
   - component: {fileID: 1185682313}
   - component: {fileID: 1185682312}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23608,7 +23746,7 @@ GameObject:
   - component: {fileID: 1195696967}
   - component: {fileID: 1195696969}
   - component: {fileID: 1195696968}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23680,7 +23818,7 @@ GameObject:
   - component: {fileID: 1205170957}
   - component: {fileID: 1205170959}
   - component: {fileID: 1205170958}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23982,7 +24120,7 @@ GameObject:
   - component: {fileID: 1215035475}
   - component: {fileID: 1215035477}
   - component: {fileID: 1215035476}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_102
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24053,7 +24191,7 @@ GameObject:
   - component: {fileID: 1225128386}
   - component: {fileID: 1225128388}
   - component: {fileID: 1225128387}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24155,7 +24293,7 @@ GameObject:
   - component: {fileID: 1239083889}
   - component: {fileID: 1239083891}
   - component: {fileID: 1239083890}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24227,7 +24365,7 @@ GameObject:
   - component: {fileID: 1239566061}
   - component: {fileID: 1239566063}
   - component: {fileID: 1239566062}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24299,7 +24437,7 @@ GameObject:
   - component: {fileID: 1247382556}
   - component: {fileID: 1247382558}
   - component: {fileID: 1247382557}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24370,7 +24508,7 @@ GameObject:
   - component: {fileID: 1255955444}
   - component: {fileID: 1255955446}
   - component: {fileID: 1255955445}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_029
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24441,7 +24579,7 @@ GameObject:
   - component: {fileID: 1260318298}
   - component: {fileID: 1260318300}
   - component: {fileID: 1260318299}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24541,7 +24679,7 @@ GameObject:
   - component: {fileID: 1270979665}
   - component: {fileID: 1270979667}
   - component: {fileID: 1270979666}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24613,7 +24751,7 @@ GameObject:
   - component: {fileID: 1272495373}
   - component: {fileID: 1272495375}
   - component: {fileID: 1272495374}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_093
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24684,7 +24822,7 @@ GameObject:
   - component: {fileID: 1276554756}
   - component: {fileID: 1276554758}
   - component: {fileID: 1276554757}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24783,7 +24921,7 @@ GameObject:
   - component: {fileID: 1282882016}
   - component: {fileID: 1282882018}
   - component: {fileID: 1282882017}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_032
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24884,7 +25022,7 @@ GameObject:
   - component: {fileID: 1292299177}
   - component: {fileID: 1292299179}
   - component: {fileID: 1292299178}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_081
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24984,7 +25122,7 @@ GameObject:
   - component: {fileID: 1302249929}
   - component: {fileID: 1302249931}
   - component: {fileID: 1302249930}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25055,7 +25193,7 @@ GameObject:
   - component: {fileID: 1305903302}
   - component: {fileID: 1305903304}
   - component: {fileID: 1305903303}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25155,7 +25293,7 @@ GameObject:
   - component: {fileID: 1316505566}
   - component: {fileID: 1316505568}
   - component: {fileID: 1316505567}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25227,7 +25365,7 @@ GameObject:
   - component: {fileID: 1317430773}
   - component: {fileID: 1317430775}
   - component: {fileID: 1317430774}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_083
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25298,7 +25436,7 @@ GameObject:
   - component: {fileID: 1317523832}
   - component: {fileID: 1317523834}
   - component: {fileID: 1317523833}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_094
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25369,7 +25507,7 @@ GameObject:
   - component: {fileID: 1318761107}
   - component: {fileID: 1318761109}
   - component: {fileID: 1318761108}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25442,7 +25580,7 @@ GameObject:
   - component: {fileID: 1321162195}
   - component: {fileID: 1321162197}
   - component: {fileID: 1321162196}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_091
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25511,7 +25649,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1321780527}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25696,7 +25834,7 @@ GameObject:
   - component: {fileID: 1334516363}
   - component: {fileID: 1334516365}
   - component: {fileID: 1334516364}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25768,7 +25906,7 @@ GameObject:
   - component: {fileID: 1335096099}
   - component: {fileID: 1335096101}
   - component: {fileID: 1335096100}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25839,7 +25977,7 @@ GameObject:
   - component: {fileID: 1336440885}
   - component: {fileID: 1336440887}
   - component: {fileID: 1336440886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25910,7 +26048,7 @@ GameObject:
   - component: {fileID: 1337312116}
   - component: {fileID: 1337312118}
   - component: {fileID: 1337312117}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25981,7 +26119,7 @@ GameObject:
   - component: {fileID: 1338372472}
   - component: {fileID: 1338372474}
   - component: {fileID: 1338372473}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_033
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26053,7 +26191,7 @@ GameObject:
   - component: {fileID: 1343726589}
   - component: {fileID: 1343726591}
   - component: {fileID: 1343726590}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26126,7 +26264,7 @@ GameObject:
   - component: {fileID: 1344732885}
   - component: {fileID: 1344732887}
   - component: {fileID: 1344732886}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26198,7 +26336,7 @@ GameObject:
   - component: {fileID: 1356795847}
   - component: {fileID: 1356795849}
   - component: {fileID: 1356795848}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26353,7 +26491,7 @@ GameObject:
   - component: {fileID: 1366625783}
   - component: {fileID: 1366625785}
   - component: {fileID: 1366625784}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26497,7 +26635,7 @@ GameObject:
   - component: {fileID: 1375099932}
   - component: {fileID: 1375099934}
   - component: {fileID: 1375099933}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26661,7 +26799,7 @@ GameObject:
   - component: {fileID: 1380624007}
   - component: {fileID: 1380624009}
   - component: {fileID: 1380624008}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26733,7 +26871,7 @@ GameObject:
   - component: {fileID: 1384373776}
   - component: {fileID: 1384373778}
   - component: {fileID: 1384373777}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26835,7 +26973,7 @@ GameObject:
   - component: {fileID: 1386222270}
   - component: {fileID: 1386222272}
   - component: {fileID: 1386222271}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26906,7 +27044,7 @@ GameObject:
   - component: {fileID: 1389807943}
   - component: {fileID: 1389807945}
   - component: {fileID: 1389807944}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26977,7 +27115,7 @@ GameObject:
   - component: {fileID: 1390099972}
   - component: {fileID: 1390099974}
   - component: {fileID: 1390099973}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27048,7 +27186,7 @@ GameObject:
   - component: {fileID: 1390638765}
   - component: {fileID: 1390638767}
   - component: {fileID: 1390638766}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27146,7 +27284,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1391852255}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27227,7 +27365,7 @@ GameObject:
   - component: {fileID: 1395091287}
   - component: {fileID: 1395091289}
   - component: {fileID: 1395091288}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27298,7 +27436,7 @@ GameObject:
   - component: {fileID: 1395292517}
   - component: {fileID: 1395292519}
   - component: {fileID: 1395292518}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_074
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27369,7 +27507,7 @@ GameObject:
   - component: {fileID: 1398587905}
   - component: {fileID: 1398587907}
   - component: {fileID: 1398587906}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_antenna_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27468,7 +27606,7 @@ GameObject:
   - component: {fileID: 1407596138}
   - component: {fileID: 1407596140}
   - component: {fileID: 1407596139}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27539,7 +27677,7 @@ GameObject:
   - component: {fileID: 1409300230}
   - component: {fileID: 1409300232}
   - component: {fileID: 1409300231}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_085
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27610,7 +27748,7 @@ GameObject:
   - component: {fileID: 1410137392}
   - component: {fileID: 1410137394}
   - component: {fileID: 1410137393}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27681,7 +27819,7 @@ GameObject:
   - component: {fileID: 1428556921}
   - component: {fileID: 1428556923}
   - component: {fileID: 1428556922}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27752,7 +27890,7 @@ GameObject:
   - component: {fileID: 1436223894}
   - component: {fileID: 1436223896}
   - component: {fileID: 1436223895}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27885,7 +28023,7 @@ GameObject:
   - component: {fileID: 1443731162}
   - component: {fileID: 1443731164}
   - component: {fileID: 1443731163}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27957,7 +28095,7 @@ GameObject:
   - component: {fileID: 1448489385}
   - component: {fileID: 1448489387}
   - component: {fileID: 1448489386}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28057,7 +28195,7 @@ GameObject:
   - component: {fileID: 1453304833}
   - component: {fileID: 1453304835}
   - component: {fileID: 1453304834}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_036
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28210,7 +28348,7 @@ GameObject:
   - component: {fileID: 1453819244}
   - component: {fileID: 1453819246}
   - component: {fileID: 1453819245}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28283,7 +28421,7 @@ GameObject:
   - component: {fileID: 1455845096}
   - component: {fileID: 1455845098}
   - component: {fileID: 1455845097}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28354,7 +28492,7 @@ GameObject:
   - component: {fileID: 1460118251}
   - component: {fileID: 1460118253}
   - component: {fileID: 1460118252}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_068
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28425,7 +28563,7 @@ GameObject:
   - component: {fileID: 1461956196}
   - component: {fileID: 1461956198}
   - component: {fileID: 1461956197}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28497,7 +28635,7 @@ GameObject:
   - component: {fileID: 1464465935}
   - component: {fileID: 1464465937}
   - component: {fileID: 1464465936}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_065
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28568,7 +28706,7 @@ GameObject:
   - component: {fileID: 1465846832}
   - component: {fileID: 1465846834}
   - component: {fileID: 1465846833}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28640,7 +28778,7 @@ GameObject:
   - component: {fileID: 1473014309}
   - component: {fileID: 1473014311}
   - component: {fileID: 1473014310}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_037
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28742,7 +28880,7 @@ GameObject:
   - component: {fileID: 1476535835}
   - component: {fileID: 1476535837}
   - component: {fileID: 1476535836}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28815,7 +28953,7 @@ GameObject:
   - component: {fileID: 1479881931}
   - component: {fileID: 1479881933}
   - component: {fileID: 1479881932}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28916,7 +29054,7 @@ GameObject:
   - component: {fileID: 1492984968}
   - component: {fileID: 1492984970}
   - component: {fileID: 1492984969}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_084
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28987,7 +29125,7 @@ GameObject:
   - component: {fileID: 1493046855}
   - component: {fileID: 1493046857}
   - component: {fileID: 1493046856}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29087,7 +29225,7 @@ GameObject:
   - component: {fileID: 1503054913}
   - component: {fileID: 1503054915}
   - component: {fileID: 1503054914}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29187,7 +29325,7 @@ GameObject:
   - component: {fileID: 1510484210}
   - component: {fileID: 1510484212}
   - component: {fileID: 1510484211}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29258,7 +29396,7 @@ GameObject:
   - component: {fileID: 1510569724}
   - component: {fileID: 1510569726}
   - component: {fileID: 1510569725}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_048
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29330,7 +29468,7 @@ GameObject:
   - component: {fileID: 1512723272}
   - component: {fileID: 1512723274}
   - component: {fileID: 1512723273}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_066
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29429,7 +29567,7 @@ GameObject:
   - component: {fileID: 1532020489}
   - component: {fileID: 1532020491}
   - component: {fileID: 1532020490}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29500,7 +29638,7 @@ GameObject:
   - component: {fileID: 1533753812}
   - component: {fileID: 1533753814}
   - component: {fileID: 1533753813}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_042
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29571,7 +29709,7 @@ GameObject:
   - component: {fileID: 1539713029}
   - component: {fileID: 1539713031}
   - component: {fileID: 1539713030}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29670,7 +29808,7 @@ GameObject:
   - component: {fileID: 1547755670}
   - component: {fileID: 1547755672}
   - component: {fileID: 1547755671}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_064
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29742,7 +29880,7 @@ GameObject:
   - component: {fileID: 1548165577}
   - component: {fileID: 1548165579}
   - component: {fileID: 1548165578}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_025
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29813,7 +29951,7 @@ GameObject:
   - component: {fileID: 1549999860}
   - component: {fileID: 1549999862}
   - component: {fileID: 1549999861}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29913,7 +30051,7 @@ GameObject:
   - component: {fileID: 1560513560}
   - component: {fileID: 1560513562}
   - component: {fileID: 1560513561}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29984,7 +30122,7 @@ GameObject:
   - component: {fileID: 1568174603}
   - component: {fileID: 1568174605}
   - component: {fileID: 1568174604}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30064,7 +30202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1579972594
 Transform:
   m_ObjectHideFlags: 0
@@ -30112,7 +30250,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
+  m_BackGroundColor: {r: 0.28222764, g: 0.280439, b: 0.28676468, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -30162,7 +30300,7 @@ GameObject:
   - component: {fileID: 1581679112}
   - component: {fileID: 1581679114}
   - component: {fileID: 1581679113}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30262,7 +30400,7 @@ GameObject:
   - component: {fileID: 1586245619}
   - component: {fileID: 1586245621}
   - component: {fileID: 1586245620}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30333,7 +30471,7 @@ GameObject:
   - component: {fileID: 1605445546}
   - component: {fileID: 1605445548}
   - component: {fileID: 1605445547}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30404,7 +30542,7 @@ GameObject:
   - component: {fileID: 1617220729}
   - component: {fileID: 1617220731}
   - component: {fileID: 1617220730}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_053
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30605,7 +30743,7 @@ GameObject:
   - component: {fileID: 1627981182}
   - component: {fileID: 1627981184}
   - component: {fileID: 1627981183}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30677,7 +30815,7 @@ GameObject:
   - component: {fileID: 1629692666}
   - component: {fileID: 1629692668}
   - component: {fileID: 1629692667}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30748,7 +30886,7 @@ GameObject:
   - component: {fileID: 1635741718}
   - component: {fileID: 1635741720}
   - component: {fileID: 1635741719}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30847,7 +30985,7 @@ GameObject:
   - component: {fileID: 1649883723}
   - component: {fileID: 1649883725}
   - component: {fileID: 1649883724}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_floodLight_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30920,7 +31058,7 @@ GameObject:
   - component: {fileID: 1656325188}
   - component: {fileID: 1656325190}
   - component: {fileID: 1656325189}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30991,7 +31129,7 @@ GameObject:
   - component: {fileID: 1656829993}
   - component: {fileID: 1656829995}
   - component: {fileID: 1656829994}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_023
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31061,7 +31199,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1661771962}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wires
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31149,7 +31287,7 @@ GameObject:
   - component: {fileID: 1668875502}
   - component: {fileID: 1668875504}
   - component: {fileID: 1668875503}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_116
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31220,7 +31358,7 @@ GameObject:
   - component: {fileID: 1673860933}
   - component: {fileID: 1673860935}
   - component: {fileID: 1673860934}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31293,7 +31431,7 @@ GameObject:
   - component: {fileID: 1673911212}
   - component: {fileID: 1673911214}
   - component: {fileID: 1673911213}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31364,7 +31502,7 @@ GameObject:
   - component: {fileID: 1678766182}
   - component: {fileID: 1678766184}
   - component: {fileID: 1678766183}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31435,7 +31573,7 @@ GameObject:
   - component: {fileID: 1680616604}
   - component: {fileID: 1680616606}
   - component: {fileID: 1680616605}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31506,7 +31644,7 @@ GameObject:
   - component: {fileID: 1680978330}
   - component: {fileID: 1680978332}
   - component: {fileID: 1680978331}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31577,7 +31715,7 @@ GameObject:
   - component: {fileID: 1688377335}
   - component: {fileID: 1688377337}
   - component: {fileID: 1688377336}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31648,7 +31786,7 @@ GameObject:
   - component: {fileID: 1689193693}
   - component: {fileID: 1689193695}
   - component: {fileID: 1689193694}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31740,7 +31878,7 @@ GameObject:
   - component: {fileID: 1691923946}
   - component: {fileID: 1691923948}
   - component: {fileID: 1691923947}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_108
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31811,7 +31949,7 @@ GameObject:
   - component: {fileID: 1697830385}
   - component: {fileID: 1697830387}
   - component: {fileID: 1697830386}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31882,7 +32020,7 @@ GameObject:
   - component: {fileID: 1701780690}
   - component: {fileID: 1701780692}
   - component: {fileID: 1701780691}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31954,7 +32092,7 @@ GameObject:
   - component: {fileID: 1702210855}
   - component: {fileID: 1702210857}
   - component: {fileID: 1702210856}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32055,7 +32193,7 @@ GameObject:
   - component: {fileID: 1705689803}
   - component: {fileID: 1705689805}
   - component: {fileID: 1705689804}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_061
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32126,7 +32264,7 @@ GameObject:
   - component: {fileID: 1706474974}
   - component: {fileID: 1706474976}
   - component: {fileID: 1706474975}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32227,7 +32365,7 @@ GameObject:
   - component: {fileID: 1720316269}
   - component: {fileID: 1720316271}
   - component: {fileID: 1720316270}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_table_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32298,7 +32436,7 @@ GameObject:
   - component: {fileID: 1723460589}
   - component: {fileID: 1723460591}
   - component: {fileID: 1723460590}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_092
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32369,7 +32507,7 @@ GameObject:
   - component: {fileID: 1724712118}
   - component: {fileID: 1724712120}
   - component: {fileID: 1724712119}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32440,7 +32578,7 @@ GameObject:
   - component: {fileID: 1727672016}
   - component: {fileID: 1727672018}
   - component: {fileID: 1727672017}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_110
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32511,7 +32649,7 @@ GameObject:
   - component: {fileID: 1729445611}
   - component: {fileID: 1729445613}
   - component: {fileID: 1729445612}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32583,7 +32721,7 @@ GameObject:
   - component: {fileID: 1733168404}
   - component: {fileID: 1733168406}
   - component: {fileID: 1733168405}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32655,7 +32793,7 @@ GameObject:
   - component: {fileID: 1733838571}
   - component: {fileID: 1733838573}
   - component: {fileID: 1733838572}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_075
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32726,7 +32864,7 @@ GameObject:
   - component: {fileID: 1734211424}
   - component: {fileID: 1734211426}
   - component: {fileID: 1734211425}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_027
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32797,7 +32935,7 @@ GameObject:
   - component: {fileID: 1743291283}
   - component: {fileID: 1743291285}
   - component: {fileID: 1743291284}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32869,7 +33007,7 @@ GameObject:
   - component: {fileID: 1744483832}
   - component: {fileID: 1744483834}
   - component: {fileID: 1744483833}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32942,7 +33080,7 @@ GameObject:
   - component: {fileID: 1748445960}
   - component: {fileID: 1748445962}
   - component: {fileID: 1748445961}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_050
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33013,7 +33151,7 @@ GameObject:
   - component: {fileID: 1762200025}
   - component: {fileID: 1762200027}
   - component: {fileID: 1762200026}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33084,7 +33222,7 @@ GameObject:
   - component: {fileID: 1765556280}
   - component: {fileID: 1765556282}
   - component: {fileID: 1765556281}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_telegraphPole_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33215,7 +33353,7 @@ GameObject:
   - component: {fileID: 1769405135}
   - component: {fileID: 1769405137}
   - component: {fileID: 1769405136}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33286,7 +33424,7 @@ GameObject:
   - component: {fileID: 1771192728}
   - component: {fileID: 1771192730}
   - component: {fileID: 1771192729}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33358,7 +33496,7 @@ GameObject:
   - component: {fileID: 1784305458}
   - component: {fileID: 1784305460}
   - component: {fileID: 1784305459}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33429,7 +33567,7 @@ GameObject:
   - component: {fileID: 1785047333}
   - component: {fileID: 1785047335}
   - component: {fileID: 1785047334}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33500,7 +33638,7 @@ GameObject:
   - component: {fileID: 1785928264}
   - component: {fileID: 1785928266}
   - component: {fileID: 1785928265}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_038
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33572,7 +33710,7 @@ GameObject:
   - component: {fileID: 1785997039}
   - component: {fileID: 1785997041}
   - component: {fileID: 1785997040}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_112
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33671,7 +33809,7 @@ GameObject:
   - component: {fileID: 1794751533}
   - component: {fileID: 1794751535}
   - component: {fileID: 1794751534}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33743,7 +33881,7 @@ GameObject:
   - component: {fileID: 1796004945}
   - component: {fileID: 1796004947}
   - component: {fileID: 1796004946}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_069
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33871,7 +34009,7 @@ GameObject:
   - component: {fileID: 1812101653}
   - component: {fileID: 1812101655}
   - component: {fileID: 1812101654}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_030
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33942,7 +34080,7 @@ GameObject:
   - component: {fileID: 1813381619}
   - component: {fileID: 1813381621}
   - component: {fileID: 1813381620}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_103
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34013,7 +34151,7 @@ GameObject:
   - component: {fileID: 1826798287}
   - component: {fileID: 1826798289}
   - component: {fileID: 1826798288}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_039
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34086,7 +34224,7 @@ GameObject:
   - component: {fileID: 1835968209}
   - component: {fileID: 1835968211}
   - component: {fileID: 1835968210}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_035
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34314,7 +34452,7 @@ GameObject:
   - component: {fileID: 1861569822}
   - component: {fileID: 1861569824}
   - component: {fileID: 1861569823}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34385,7 +34523,7 @@ GameObject:
   - component: {fileID: 1867581159}
   - component: {fileID: 1867581161}
   - component: {fileID: 1867581160}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34485,7 +34623,7 @@ GameObject:
   - component: {fileID: 1871911983}
   - component: {fileID: 1871911985}
   - component: {fileID: 1871911984}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34557,7 +34695,7 @@ GameObject:
   - component: {fileID: 1872726171}
   - component: {fileID: 1872726173}
   - component: {fileID: 1872726172}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34629,7 +34767,7 @@ GameObject:
   - component: {fileID: 1873876247}
   - component: {fileID: 1873876249}
   - component: {fileID: 1873876248}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_024
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34700,7 +34838,7 @@ GameObject:
   - component: {fileID: 1875236012}
   - component: {fileID: 1875236014}
   - component: {fileID: 1875236013}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_114
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34771,7 +34909,7 @@ GameObject:
   - component: {fileID: 1876858072}
   - component: {fileID: 1876858074}
   - component: {fileID: 1876858073}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34871,7 +35009,7 @@ GameObject:
   - component: {fileID: 1879840177}
   - component: {fileID: 1879840179}
   - component: {fileID: 1879840178}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34973,7 +35111,7 @@ GameObject:
   - component: {fileID: 1885056237}
   - component: {fileID: 1885056239}
   - component: {fileID: 1885056238}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35044,7 +35182,7 @@ GameObject:
   - component: {fileID: 1885584398}
   - component: {fileID: 1885584400}
   - component: {fileID: 1885584399}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35114,7 +35252,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1893375978}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35190,7 +35328,7 @@ GameObject:
   - component: {fileID: 1920335043}
   - component: {fileID: 1920335045}
   - component: {fileID: 1920335044}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_063
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35262,7 +35400,7 @@ GameObject:
   - component: {fileID: 1924413301}
   - component: {fileID: 1924413303}
   - component: {fileID: 1924413302}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35335,7 +35473,7 @@ GameObject:
   - component: {fileID: 1929878032}
   - component: {fileID: 1929878034}
   - component: {fileID: 1929878033}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35406,7 +35544,7 @@ GameObject:
   - component: {fileID: 1932798361}
   - component: {fileID: 1932798363}
   - component: {fileID: 1932798362}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35477,7 +35615,7 @@ GameObject:
   - component: {fileID: 1936760803}
   - component: {fileID: 1936760805}
   - component: {fileID: 1936760804}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_040
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35549,7 +35687,7 @@ GameObject:
   - component: {fileID: 1943150926}
   - component: {fileID: 1943150928}
   - component: {fileID: 1943150927}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35649,7 +35787,7 @@ GameObject:
   - component: {fileID: 1954340868}
   - component: {fileID: 1954340870}
   - component: {fileID: 1954340869}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_051
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35776,7 +35914,7 @@ GameObject:
   - component: {fileID: 1961108179}
   - component: {fileID: 1961108181}
   - component: {fileID: 1961108180}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35849,7 +35987,7 @@ GameObject:
   - component: {fileID: 1961684838}
   - component: {fileID: 1961684840}
   - component: {fileID: 1961684839}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_026
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35920,7 +36058,7 @@ GameObject:
   - component: {fileID: 1962518289}
   - component: {fileID: 1962518291}
   - component: {fileID: 1962518290}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35992,7 +36130,7 @@ GameObject:
   - component: {fileID: 1964186470}
   - component: {fileID: 1964186472}
   - component: {fileID: 1964186471}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_063
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36063,7 +36201,7 @@ GameObject:
   - component: {fileID: 1966009657}
   - component: {fileID: 1966009659}
   - component: {fileID: 1966009658}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36134,7 +36272,7 @@ GameObject:
   - component: {fileID: 1966354318}
   - component: {fileID: 1966354320}
   - component: {fileID: 1966354319}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36205,7 +36343,7 @@ GameObject:
   - component: {fileID: 1969268684}
   - component: {fileID: 1969268686}
   - component: {fileID: 1969268685}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36276,7 +36414,7 @@ GameObject:
   - component: {fileID: 1972080972}
   - component: {fileID: 1972080974}
   - component: {fileID: 1972080973}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ground_001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36403,7 +36541,7 @@ GameObject:
   - component: {fileID: 1984964465}
   - component: {fileID: 1984964467}
   - component: {fileID: 1984964466}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_045
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36474,7 +36612,7 @@ GameObject:
   - component: {fileID: 1987811278}
   - component: {fileID: 1987811280}
   - component: {fileID: 1987811279}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36547,7 +36685,7 @@ GameObject:
   - component: {fileID: 1993425063}
   - component: {fileID: 1993425065}
   - component: {fileID: 1993425064}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36728,7 +36866,7 @@ GameObject:
   - component: {fileID: 2006933717}
   - component: {fileID: 2006933719}
   - component: {fileID: 2006933718}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36800,7 +36938,7 @@ GameObject:
   - component: {fileID: 2008305907}
   - component: {fileID: 2008305909}
   - component: {fileID: 2008305908}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_058
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36871,7 +37009,7 @@ GameObject:
   - component: {fileID: 2008322193}
   - component: {fileID: 2008322195}
   - component: {fileID: 2008322194}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36942,7 +37080,7 @@ GameObject:
   - component: {fileID: 2012364455}
   - component: {fileID: 2012364457}
   - component: {fileID: 2012364456}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_028
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37013,7 +37151,7 @@ GameObject:
   - component: {fileID: 2014464477}
   - component: {fileID: 2014464479}
   - component: {fileID: 2014464478}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_054
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37084,7 +37222,7 @@ GameObject:
   - component: {fileID: 2015309172}
   - component: {fileID: 2015309174}
   - component: {fileID: 2015309173}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_061
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37292,7 +37430,7 @@ GameObject:
   - component: {fileID: 2019234845}
   - component: {fileID: 2019234847}
   - component: {fileID: 2019234846}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_021
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37463,7 +37601,7 @@ GameObject:
   - component: {fileID: 2025970430}
   - component: {fileID: 2025970432}
   - component: {fileID: 2025970431}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_052
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37536,7 +37674,7 @@ GameObject:
   - component: {fileID: 2027290922}
   - component: {fileID: 2027290924}
   - component: {fileID: 2027290923}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37607,7 +37745,7 @@ GameObject:
   - component: {fileID: 2036238908}
   - component: {fileID: 2036238910}
   - component: {fileID: 2036238909}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_047
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37679,7 +37817,7 @@ GameObject:
   - component: {fileID: 2036266984}
   - component: {fileID: 2036266986}
   - component: {fileID: 2036266985}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_044
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37750,7 +37888,7 @@ GameObject:
   - component: {fileID: 2046338593}
   - component: {fileID: 2046338595}
   - component: {fileID: 2046338594}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_megaphone_002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37857,7 +37995,7 @@ GameObject:
   - component: {fileID: 2050219013}
   - component: {fileID: 2050219015}
   - component: {fileID: 2050219014}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_B_003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37984,7 +38122,7 @@ GameObject:
   - component: {fileID: 2061160296}
   - component: {fileID: 2061160298}
   - component: {fileID: 2061160297}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38056,7 +38194,7 @@ GameObject:
   - component: {fileID: 2065132017}
   - component: {fileID: 2065132019}
   - component: {fileID: 2065132018}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38127,7 +38265,7 @@ GameObject:
   - component: {fileID: 2070690165}
   - component: {fileID: 2070690167}
   - component: {fileID: 2070690166}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_034
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38199,7 +38337,7 @@ GameObject:
   - component: {fileID: 2074691764}
   - component: {fileID: 2074691766}
   - component: {fileID: 2074691765}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38272,7 +38410,7 @@ GameObject:
   - component: {fileID: 2076424702}
   - component: {fileID: 2076424704}
   - component: {fileID: 2076424703}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38374,7 +38512,7 @@ GameObject:
   - component: {fileID: 2087597972}
   - component: {fileID: 2087597974}
   - component: {fileID: 2087597973}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_080
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38543,7 +38681,7 @@ GameObject:
   - component: {fileID: 2090742984}
   - component: {fileID: 2090742986}
   - component: {fileID: 2090742985}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wire_018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38614,7 +38752,7 @@ GameObject:
   - component: {fileID: 2094375110}
   - component: {fileID: 2094375112}
   - component: {fileID: 2094375111}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_022
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38686,7 +38824,7 @@ GameObject:
   - component: {fileID: 2098319468}
   - component: {fileID: 2098319470}
   - component: {fileID: 2098319469}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_barrel_008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38758,7 +38896,7 @@ GameObject:
   - component: {fileID: 2098963174}
   - component: {fileID: 2098963176}
   - component: {fileID: 2098963175}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_fan_004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38829,7 +38967,7 @@ GameObject:
   - component: {fileID: 2100023020}
   - component: {fileID: 2100023022}
   - component: {fileID: 2100023021}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38900,7 +39038,7 @@ GameObject:
   - component: {fileID: 2104310479}
   - component: {fileID: 2104310481}
   - component: {fileID: 2104310480}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38971,7 +39109,7 @@ GameObject:
   - component: {fileID: 2106459979}
   - component: {fileID: 2106459981}
   - component: {fileID: 2106459980}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_boundary_046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39044,7 +39182,7 @@ GameObject:
   - component: {fileID: 2108661045}
   - component: {fileID: 2108661047}
   - component: {fileID: 2108661046}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: decal_043
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39115,7 +39253,7 @@ GameObject:
   - component: {fileID: 2114995041}
   - component: {fileID: 2114995043}
   - component: {fileID: 2114995042}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_062
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39187,7 +39325,7 @@ GameObject:
   - component: {fileID: 2122002225}
   - component: {fileID: 2122002227}
   - component: {fileID: 2122002226}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_101
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39286,7 +39424,7 @@ GameObject:
   - component: {fileID: 2122553455}
   - component: {fileID: 2122553457}
   - component: {fileID: 2122553456}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: prop_laserFence_A_005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39385,7 +39523,7 @@ GameObject:
   - component: {fileID: 2125994987}
   - component: {fileID: 2125994989}
   - component: {fileID: 2125994988}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: liftshaft_011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39457,7 +39595,7 @@ GameObject:
   - component: {fileID: 2127447540}
   - component: {fileID: 2127447542}
   - component: {fileID: 2127447541}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_059
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39587,7 +39725,7 @@ GameObject:
   - component: {fileID: 2130214723}
   - component: {fileID: 2130214725}
   - component: {fileID: 2130214724}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wall_inner_041
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39659,7 +39797,7 @@ GameObject:
   - component: {fileID: 2139346142}
   - component: {fileID: 2139346144}
   - component: {fileID: 2139346143}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: debris_055
   m_TagString: Untagged
   m_Icon: {fileID: 0}
