@@ -39,7 +39,7 @@ public class AIZombieState_Pursuit1 : AIZombieState {
 		if (_zombieStateMachine == null) { return; }
 
 		_zombieStateMachine.NavAgentControl(true, false);
-		_zombieStateMachine.speed = _speed;
+		_zombieStateMachine.speed = Random.Range(0.8f * _speed, 1.2f * _speed);
 		_zombieStateMachine.seeking = 0;
 		_zombieStateMachine.feeding = false;
 		_zombieStateMachine.attackType = 0;

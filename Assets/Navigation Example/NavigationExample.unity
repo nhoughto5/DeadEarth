@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.066176474, g: 0.066176474, b: 0.066176474, a: 1}
+  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.11
-  m_AmbientMode: 3
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.114
+  m_ReflectionIntensity: 0.757
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14831954, g: 0.16853052, b: 0.20003211, a: 0.114}
+  m_IndirectSpecularColor: {r: 0.39246467, g: 0.43694484, b: 0.50627345, a: 0.757}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2099,7 +2099,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 143078038}
-  m_Layer: 0
+  - component: {fileID: 143078040}
+  - component: {fileID: 143078039}
+  m_Layer: 10
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2124,6 +2126,31 @@ Transform:
   m_Father: {fileID: 754469101}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &143078039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143078037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a9556129ff6c94482f6b206129d751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parameter: LeftHand
+  _bloodParticlesBustAmount: 10
+--- !u!135 &143078040
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143078037}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18
+  m_Center: {x: -0.03, y: 0, z: 0}
 --- !u!1 &149490496
 GameObject:
   m_ObjectHideFlags: 0
@@ -2715,12 +2742,12 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 163660471}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2795,12 +2822,12 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 163660471}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6662,7 +6689,7 @@ Transform:
   m_PrefabParentObject: {fileID: 494236, guid: 22e8e9479d52a604abc938e32f8c8873, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 408121299}
-  m_LocalRotation: {x: -0.6648626, y: 0.32071453, z: 0.1664963, w: 0.6537424}
+  m_LocalRotation: {x: -0.6648625, y: 0.3207145, z: 0.16649629, w: 0.6537423}
   m_LocalPosition: {x: 1.4393446, y: 1.035033, z: 12.526718}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
@@ -10489,6 +10516,7 @@ GameObject:
   - component: {fileID: 627763285}
   - component: {fileID: 627763286}
   - component: {fileID: 627763287}
+  - component: {fileID: 627763288}
   m_Layer: 8
   m_Name: AI Entity
   m_TagString: Untagged
@@ -10631,7 +10659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _slerpSpeed: 5
-  _speed: 2
+  _speed: 0.7
   _turnOnSpotThreshold: 90
 --- !u!114 &627763285
 MonoBehaviour:
@@ -10659,6 +10687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4539aeeeb11034dab7bc0ea9dbc284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _lookAtAngleThreshold: 15
+  _lookAtWeight: 0.7
   _maxDuration: 40
   _repathAudioMaxDuration: 5
   _repathAudioMinDuration: 0.25
@@ -10666,7 +10696,7 @@ MonoBehaviour:
   _repathVisualMaxDuration: 5
   _repathVisualMinDuration: 0.05
   _slerpSpeed: 5
-  _speed: 2.75
+  _speed: 1.7
 --- !u!114 &627763287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10682,6 +10712,22 @@ MonoBehaviour:
   _bloodParticlesBurstTime: 0.1
   _bloodParticlesMount: {fileID: 161301008}
   _slerpSpeed: 5
+--- !u!114 &627763288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627763276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5c013c6f4e1e34eac7e57b6a9e5b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lookAtAngleThreshold: 15
+  _lookAtWeight: 0.7
+  _slerpSpeed: 5
+  _speed: 1.25
+  _stoppingDistance: 1.5
 --- !u!1 &629500671
 GameObject:
   m_ObjectHideFlags: 0
@@ -15972,7 +16018,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 2086479602
+  randomSeed: -919621242
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -26812,6 +26858,62 @@ Transform:
   m_Father: {fileID: 974018554}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1364124254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1364124255}
+  - component: {fileID: 1364124257}
+  - component: {fileID: 1364124256}
+  m_Layer: 10
+  m_Name: MouthTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364124255
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1364124254}
+  m_LocalRotation: {x: 0.1460656, y: -0.000000028870991, z: -0.00000003341118, w: 0.9892749}
+  m_LocalPosition: {x: 0.00000048210495, y: 0.052019954, z: 0.007680458}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1374858791}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 16.798, y: 0, z: 0}
+--- !u!114 &1364124256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1364124254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a9556129ff6c94482f6b206129d751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parameter: Mouth
+  _bloodParticlesBustAmount: 10
+--- !u!136 &1364124257
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1364124254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.05
+  m_Height: 0.43
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0.24}
 --- !u!1 &1366625782
 GameObject:
   m_ObjectHideFlags: 0
@@ -26953,6 +27055,7 @@ Transform:
   - {fileID: 2052693314}
   - {fileID: 1841540438}
   - {fileID: 161301008}
+  - {fileID: 1364124255}
   m_Father: {fileID: 914189476}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28291,7 +28394,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1437263828}
-  m_Layer: 0
+  - component: {fileID: 1437263830}
+  - component: {fileID: 1437263829}
+  m_Layer: 10
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28316,6 +28421,31 @@ Transform:
   m_Father: {fileID: 1948012783}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1437263829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1437263827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a9556129ff6c94482f6b206129d751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parameter: RightHand
+  _bloodParticlesBustAmount: 10
+--- !u!135 &1437263830
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1437263827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18
+  m_Center: {x: 0.03, y: 0, z: 0}
 --- !u!1 &1440394653
 GameObject:
   m_ObjectHideFlags: 0
