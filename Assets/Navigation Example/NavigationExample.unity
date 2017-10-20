@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.757
+  m_ReflectionIntensity: 0.856
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.39246467, g: 0.43694484, b: 0.50627345, a: 0.757}
+  m_IndirectSpecularColor: {r: 0.4159768, g: 0.46279424, b: 0.5357657, a: 0.856}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2376,6 +2376,7 @@ GameObject:
   - component: {fileID: 156700292}
   - component: {fileID: 156700293}
   - component: {fileID: 156700294}
+  - component: {fileID: 156700295}
   m_Layer: 11
   m_Name: FPS Camera
   m_TagString: MainCamera
@@ -2440,6 +2441,25 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 156700291}
   m_Enabled: 1
+--- !u!114 &156700295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 156700291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63e5534afc319b4f97b49a6352cbe25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _autoFade: 1
+  _bloodAmount: 0
+  _bloodNormalMap: {fileID: 2800000, guid: 1df8c6de45f788b40bf4b2f4ab16e072, type: 3}
+  _bloodTexture: {fileID: 2800000, guid: c690354500427e64798bc73cde3005f9, type: 3}
+  _distortion: 0.2
+  _fadeSpeed: 0.05
+  _minBloodAmount: 0
+  _shader: {fileID: 4800000, guid: acbd097616bd9084cac253077b366af9, type: 3}
 --- !u!1 &157330965
 GameObject:
   m_ObjectHideFlags: 0
@@ -6689,7 +6709,7 @@ Transform:
   m_PrefabParentObject: {fileID: 494236, guid: 22e8e9479d52a604abc938e32f8c8873, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 408121299}
-  m_LocalRotation: {x: -0.6648625, y: 0.3207145, z: 0.16649629, w: 0.6537423}
+  m_LocalRotation: {x: -0.6648626, y: 0.32071453, z: 0.1664963, w: 0.6537424}
   m_LocalPosition: {x: 1.4393446, y: 1.035033, z: 12.526718}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children: []
