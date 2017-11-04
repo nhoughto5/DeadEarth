@@ -3,31 +3,10 @@ using UnityEngine;
 using UnityEngine.AI;
 
 // Public Enums of the AI System
-public enum AIStateType {
-	None,
-	Idle,
-	Alerted,
-	Patrol,
-	Attack,
-	Feeding,
-	Pursuit,
-	Dead
-}
-
-public enum AITargetType {
-	None,
-	Waypoint,
-	Visual_Player,
-	Visual_Light,
-	Visual_Food,
-	Audio
-}
-
-public enum AITriggerEventType {
-	Enter,
-	Stay,
-	Exit
-}
+public enum AIStateType { None, Idle, Alerted, Patrol, Attack, Feeding, Pursuit, Dead }
+public enum AITargetType { None, Waypoint, Visual_Player, Visual_Light, Visual_Food, Audio }
+public enum AITriggerEventType { Enter, Stay, Exit }
+public enum AIBoneAlignmentType { XAxis, YAxis, ZAxis, XAxisInverted, YAxisInverted, ZAxisInverted }
 
 // ----------------------------------------------------------------------
 // Class	:	AITarget
@@ -68,14 +47,16 @@ public abstract class AIStateMachine : MonoBehaviour {
 
 	// Protected
 	protected AIState _currentState;
+
 	protected AITarget _target;
 	protected bool _isTargetReached;
 	protected Dictionary<AIStateType, AIState> _states = new Dictionary<AIStateType, AIState>();
 	protected int _rootPositionRefCount;
 	protected int _rootRotationRefCount;
+	protected bool _cinematicEnabled;
 
 	// Protected Inspector Assigned
-	[SerializeField, Range(0, 15)]  protected float _stoppingDistance = 1.0f;
+	[SerializeField, Range(0, 15)] protected float _stoppingDistance = 1.0f;
 	[SerializeField] protected AIStateType _currentStateType = AIStateType.Idle;
 	[SerializeField] protected AIWaypointNetwork _waypointNetwork = null;
 	[SerializeField] protected bool _randomPatrol = false;
@@ -83,6 +64,7 @@ public abstract class AIStateMachine : MonoBehaviour {
 	[SerializeField] protected SphereCollider _sensorTrigger = null;
 	[SerializeField] protected SphereCollider _targetTrigger = null;
 	[SerializeField] protected Transform _rootBone = null;
+	[SerializeField] protected AIBoneAlignmentType _rootBoneAlignment = AIBoneAlignmentType.ZAxis;
 
 	// Component Cache
 	protected Animator _animator;
@@ -121,6 +103,7 @@ public abstract class AIStateMachine : MonoBehaviour {
 		}
 	}
 
+	public bool cinematicEnabled { get { return _cinematicEnabled; } set { _cinematicEnabled = value; } }
 	public bool useRootPosition { get { return _rootPositionRefCount > 0; } }
 	public bool useRootRotation { get { return _rootRotationRefCount > 0; } }
 	public AITargetType targetType { get { return _target.type; } }
@@ -141,10 +124,8 @@ public abstract class AIStateMachine : MonoBehaviour {
 	// -----------------------------------------------------------------------------
 	public Vector3 GetWaypointPosition(bool increment) {
 		if (_currentWaypoint == -1) {
-			if (_randomPatrol) { _currentWaypoint = Random.Range(0, _waypointNetwork.Waypoints.Count); }
-			else { _currentWaypoint = 0; }
-		}
-		else if (increment) { NextWaypoint(); }
+			if (_randomPatrol) { _currentWaypoint = Random.Range(0, _waypointNetwork.Waypoints.Count); } else { _currentWaypoint = 0; }
+		} else if (increment) { NextWaypoint(); }
 
 		// Fetch the new waypoint from the waypoint list
 		if (_waypointNetwork.Waypoints[_currentWaypoint] != null) {
@@ -256,8 +237,7 @@ public abstract class AIStateMachine : MonoBehaviour {
 	}
 
 	public virtual void TakeDamage(Vector3 position, Vector3 force, int damage, Rigidbody bodyPart, CharacterManager characterManager,
-	                               int hitDirection = 0) {
-
+								   int hitDirection = 0) {
 	}
 
 	// -----------------------------------------------------------------
@@ -316,14 +296,14 @@ public abstract class AIStateMachine : MonoBehaviour {
 		if (_states.ContainsKey(_currentStateType)) {
 			_currentState = _states[_currentStateType];
 			_currentState.OnEnterState();
-		}
-		else { _currentState = null; }
+		} else { _currentState = null; }
 
 		// Fetch all AIStateMachineLink derived behaviours from the animator
 		// and set their State Machine references to this state machine
 		if (_animator) {
 			AIStateMachineLink[] scripts = _animator.GetBehaviours<AIStateMachineLink>();
-			foreach (AIStateMachineLink script in scripts) script.stateMachine = this;
+			foreach (AIStateMachineLink script in scripts)
+				script.stateMachine = this;
 		}
 	}
 
@@ -357,8 +337,7 @@ public abstract class AIStateMachine : MonoBehaviour {
 				_currentState.OnExitState();
 				newState.OnEnterState();
 				_currentState = newState;
-			}
-			else if (_states.TryGetValue(AIStateType.Idle, out newState)) {
+			} else if (_states.TryGetValue(AIStateType.Idle, out newState)) {
 				_currentState.OnExitState();
 				newState.OnEnterState();
 				_currentState = newState;
@@ -440,7 +419,6 @@ public abstract class AIStateMachine : MonoBehaviour {
 			// NOTE: Very important that waypoint networks do not only have one waypoint :)
 			int oldWaypoint = _currentWaypoint;
 			while (_currentWaypoint == oldWaypoint) { _currentWaypoint = Random.Range(0, _waypointNetwork.Waypoints.Count); }
-		}
-		else { _currentWaypoint = _currentWaypoint == _waypointNetwork.Waypoints.Count - 1 ? 0 : _currentWaypoint + 1; }
+		} else { _currentWaypoint = _currentWaypoint == _waypointNetwork.Waypoints.Count - 1 ? 0 : _currentWaypoint + 1; }
 	}
 }

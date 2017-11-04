@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class AIStateMachineLink : StateMachineBehaviour
-{
-
+public class AIStateMachineLink : StateMachineBehaviour {
     protected AIStateMachine _stateMachine;
     public AIStateMachine stateMachine { set { _stateMachine = value; } }
 }
